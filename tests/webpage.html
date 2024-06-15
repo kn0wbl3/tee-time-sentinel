@@ -1,0 +1,1373 @@
+<html lang="en" data-ng-app="ezLinks" data-ng-controller="generalController as generalController" data-ng-init="generalController.init()" class="ng-scope"><style type="text/css">
+    @font-face {
+      font-family: 'Avenir Next CE';
+      src: url("chrome-extension://facncfnojagdpibmijfjdmhkklabakgd/assets/fonts/AvenirNextLTW01-Medium/1a7c9181-cd24-4943-a9d9-d033189524e0.eot") format("eot"), url("chrome-extension://facncfnojagdpibmijfjdmhkklabakgd/assets/fonts/AvenirNextLTW01-Medium/f26faddb-86cc-4477-a253-1e1287684336.woff") format("woff"), url("chrome-extension://facncfnojagdpibmijfjdmhkklabakgd/assets/fonts/AvenirNextLTW01-Medium/63a74598-733c-4d0c-bd91-b01bffcd6e69.ttf") format("ttf"), url("chrome-extension://facncfnojagdpibmijfjdmhkklabakgd/assets/fonts/AvenirNextLTW01-Medium/627fbb5a-3bae-4cd9-b617-2f923e29d55e.woff2") format("woff2");
+    }
+    @font-face {
+      font-family: 'Avenir Next CE';
+      font-weight: 600;
+      src: url("chrome-extension://facncfnojagdpibmijfjdmhkklabakgd/assets/fonts/AvenirNextLTW01-Demi/12d643f2-3899-49d5-a85b-ff430f5fad15.eot") format("eot"), url("chrome-extension://facncfnojagdpibmijfjdmhkklabakgd/assets/fonts/AvenirNextLTW01-Demi/91b50bbb-9aa1-4d54-9159-ec6f19d14a7c.woff") format("woff"), url("chrome-extension://facncfnojagdpibmijfjdmhkklabakgd/assets/fonts/AvenirNextLTW01-Demi/a0f4c2f9-8a42-4786-ad00-fce42b57b148.ttf") format("ttf"), url("chrome-extension://facncfnojagdpibmijfjdmhkklabakgd/assets/fonts/AvenirNextLTW01-Demi/aad99a1f-7917-4dd6-bbb5-b07cedbff64f.woff2") format("woff2");
+    }
+    </style><head><style type="text/css">.uib-tab > div{position:relative;display:block;padding:10px 15px;outline:0;color:#337ab7;}.uib-tab > div:focus,.uib-tab > div:hover{background-color:#eee;color:#23527c;}.uib-tab.disabled > div{color:#777;}.uib-tab.disabled > div:focus,.uib-tab.disabled > div:hover{color:#777;cursor:not-allowed;background-color:transparent;}.nav-tabs > .uib-tab > div{margin-right:2px;line-height:1.42857143;border:1px solid transparent;border-radius:4px 4px 0 0;}.nav-tabs > .uib-tab > div:hover{border-color:#eee #eee #ddd;}.nav-tabs > .uib-tab.active > div,.nav-tabs > .uib-tab.active > div:focus,.nav-tabs > .uib-tab.active > div:hover{color:#555;cursor:default;background-color:#fff;border-color:#ddd #ddd transparent #ddd;}.nav-pills > .uib-tab > div{border-radius:4px;}.nav-pills > .uib-tab.active > div,.nav-pills > .uib-tab.active > div:focus,.nav-pills > .uib-tab.active > div:hover{color:#fff;background-color:#337ab7;}</style><style type="text/css">.ng-animate.item:not(.left):not(.right){-webkit-transition:0s ease-in-out left;transition:0s ease-in-out left}</style><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+  <base href="/">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no,user-scalable=no">
+  <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Pragma-directive: no-cache">
+  <meta http-equiv="Cache-directive: no-cache">
+  <meta http-equiv="Expires" content="0">
+  <!-- ngIf: facebookDomainVerification -->
+  <title>Westchester County - Res Park Passholder - Online tee times made EZ</title>
+  <link rel="stylesheet" href="assets/css/main.min.css">
+  
+  <link rel="stylesheet" href="app/all-5df7509167.min.css">
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+  <link rel="stylesheet" href="bower_components/angular-busy/angular-busy.min.css">
+  <style type="text/css">@font-face {font-family:Arvo;font-style:normal;font-weight:400;src:url(/cf-fonts/s/arvo/5.0.18/latin/400/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}</style>
+  <script async="" src="//www.googletagmanager.com/gtm.js?id=GTM-TC3W9J"></script><script type="text/javascript">
+          var dataLayer = [{ 'Event': 'Load', 'Page Hostname': window.location.hostname }];
+      </script>
+  <script type="text/javascript">
+          (function (w, d, s, l, i) {
+              w[l] = w[l] || []; w[l].push({
+                  'gtm.start':
+                      new Date().getTime(), event: 'gtm.js'
+              }); var f = d.getElementsByTagName(s)[0],
+                  j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                      '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+          })(window, document, 'script', 'dataLayer', 'GTM-TC3W9J');
+      </script>
+  </head>
+  <body>
+  
+  <noscript>
+          <iframe src="//www.googletagmanager.com/ns.html?id=GTM-TC3W9J"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe>
+      </noscript>
+  
+  <script type="text/javascript">
+          // fix for IE9
+          (function () {
+              window.console = window.console || {};
+              window.console.log = window.console.log || function () { };
+          })();
+      </script>
+  <script type="text/ng-template" id="loading.html">
+          <div style="{{loadingIndicatorStyle}}">
+              <div class="loading-indicator">
+                  <i class="fa-li fa fa-spinner fa-spin"></i>
+              </div>
+          </div>
+      </script>
+  <!-- ngInclude: 'app/styles.html' --><div data-ng-include="'app/styles.html'" class="ng-scope"><style class="ng-binding ng-scope">
+      .filter li .date-input {
+          background-image: -ms-linear-gradient(top, #2772ba 1%, #2772ba 100%);
+          background-image: -moz-linear-gradient(top, #2772ba 1%, #2772ba 100%);
+          background-image: -o-linear-gradient(top, #2772ba 1%, #2772ba 100%);
+          background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.01, #2772ba), color-stop(1, #2772ba));
+          background-image: -webkit-linear-gradient(top, #2772ba 0%, #2772ba 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2772ba', endColorstr='#2772ba'); zoom: 1;
+  
+          background-image: linear-gradient(to bottom, #2772ba 1%, #2772ba 100%);
+      }
+  
+      .in-box {
+          border: 1px solid #2772ba;
+      }
+  
+      /* line 8, ../scss/modules/_home.scss */
+      .horizontal-separator {
+          border-top: 1px solid #2772ba;
+      }
+  
+      /* line 12, ../scss/modules/_home.scss */
+      .vertical-separator {
+          border-right: 1px solid #2772ba;
+      }
+  
+      .btn-default {
+          background-image: -ms-linear-gradient(top, #2772ba 1%, #2772ba 100%);
+          background-image: -moz-linear-gradient(top, #2772ba 1%, #2772ba 100%);
+          background-image: -o-linear-gradient(top, #2772ba 1%, #2772ba 100%);
+          background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.01, #2772ba), color-stop(1, #2772ba));
+          background-image: -webkit-linear-gradient(top, #2772ba 0%, #2772ba 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2772ba', endColorstr='#2772ba'); zoom: 1;
+  
+          background-image: linear-gradient(to bottom, #2772ba 1%, #2772ba 100%);
+      }
+  
+      .or-spacer .mask:after {
+          box-shadow: 0 0 8px #2772ba;
+      }
+  
+      .or-spacer .mask:after {
+          box-shadow: 0 0 8px #2772ba;
+      }
+  
+      .or-spacer-vertical.left .mask:after {
+          box-shadow: 0 0 8px #2772ba;
+      }
+  
+      .or-spacer-vertical.right .mask:before {
+          box-shadow: 0 0 8px #2772ba;
+      }
+  
+      .filter li .date-input {
+          background-image: -ms-linear-gradient(top, #2772ba 1%, #2772ba 100%);
+          background-image: -moz-linear-gradient(top, #2772ba 1%, #2772ba 100%);
+          background-image: -o-linear-gradient(top, #2772ba 1%, #2772ba 100%);
+          background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.01, #2772ba), color-stop(1, #2772ba));
+          background-image: -webkit-linear-gradient(top, #2772ba 0%, #2772ba 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2772ba', endColorstr='#2772ba'); zoom: 1;
+  
+          background-image: linear-gradient(to bottom, #2772ba 1%, #2772ba 100%);
+      }
+  
+      .ui-widget-header {
+          background: #2772ba !important;
+      }
+  
+      .primary-btn {
+          background-image: -ms-linear-gradient(top, #2772ba 1%, #2772ba 100%);
+          background-image: -moz-linear-gradient(top, #2772ba 1%, #2772ba 100%);
+          background-image: -o-linear-gradient(top, #2772ba 1%, #2772ba 100%);
+          background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.01, #2772ba), color-stop(1, #2772ba));
+          background-image: -webkit-linear-gradient(top, #2772ba 0%, #2772ba 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2772ba', endColorstr='#2772ba'); zoom: 1;
+  
+          background-image: linear-gradient(to bottom, #2772ba 1%, #2772ba 100%);
+      }
+  
+      .select-pricing-modal .pricing-players label.active {
+          background: #2772ba;
+      }
+  
+      .select-pricing-modal .price-listing:hover, .select-pricing-modal .price-listing.active {
+          background: #2772ba;
+      }
+  
+      .ui-widget-header {
+          background: #2772ba !important;
+      }
+  
+      .ui-widget-header .ui-datepicker-prev, .ui-widget-header .ui-datepicker-next {
+          color: #fff !important;
+          background: #2772ba !important;
+          }
+  
+      .ngrs-range-slider .ngrs-join {
+          background-color: #2772ba;
+          background-image: linear-gradient(#2772ba, #2772ba);
+      }
+  
+      a {
+          color: #2772ba;
+      }
+  
+      .filter li .filter-window .ui-widget-header {
+          background: #2772ba;
+      }
+  
+      .top-nav .account-menu ul li:hover {
+          background-color: #2772ba;
+      }
+  
+      .top-nav .account-menu .account-details a:hover {
+          color: #2772ba;
+      }
+  
+      .select-pricing-modal .pricing-players label.active {
+          background: #2772ba;
+      }
+  
+      .select-pricing-modal ul.selectPricingList li .price-listing:hover, .select-pricing-modal ul.selectPricingList li .price-listing.active {
+          background: #2772ba;
+      }
+  
+      .confirmation-page h1 .num, .cart-page h1 .num {
+          background: #2772ba;
+          box-shadow: 0px 0px 2px #2772ba,inset -1px 0px 2px #fff;
+      }
+  
+      .page-header {
+          border-bottom: solid 5px #2772ba;
+      }
+  
+      .reservations .reservation-list .actions i {
+          color: #2772ba;
+      }
+  
+      .internal-footer a {
+          color: #2772ba;
+      }
+  
+      .course {
+          background-color: #808080 !important;
+          color: #FFFFFF !important;
+      }
+  
+      header {
+          border-bottom: 3px solid #2772ba;
+      }
+  
+      footer {
+          border-top: 3px solid #2772ba;
+      }
+  
+      .teeSheetHeader {
+          background-image: -ms-linear-gradient(top, #2772ba 1%, #2772ba 100%);
+          background-image: -moz-linear-gradient(top, #2772ba 1%, #2772ba 100%);
+          background-image: -o-linear-gradient(top, #2772ba 1%, #2772ba 100%);
+          background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.01, #2772ba), color-stop(1, #2772ba));
+          background-image: -webkit-linear-gradient(top, #2772ba 0%, #2772ba 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2772ba', endColorstr='#2772ba');
+          zoom: 1;
+          background-image: linear-gradient(to bottom, #2772ba 1%, #2772ba 100%);
+      }
+  
+      @media (max-width: 767px) {
+          header {
+              background: url(https://cdn.ezlinks.com/Sponsor/17711/_images/westchesterlogin3-30320x60.png) center no-repeat;
+              height: 60px;
+              
+          }
+  
+          header .logo {
+              max-height: 57px;
+          }
+  
+          footer {
+              background: url() center no-repeat;
+              height: 60px;
+              display: none;
+          }
+      }
+  
+      @media (min-width: 768px) and (max-width: 1200px) {
+          header {
+              background: url(https://cdn.ezlinks.com/Sponsor/17711/_images/westchesterlogin3-30768x100.png) center no-repeat;
+              height: 100px;
+              
+          }
+  
+          header .logo {
+              max-height: 97px;
+          }
+  
+          footer {
+              background: url() center no-repeat;
+              height: 100px;
+              display: none;
+          }
+      }
+  
+      @media (min-width: 1201px) {
+          header {
+              background: url(https://cdn.ezlinks.com/Sponsor/17693/_images/westchesterlogin3-301200x100.png) center no-repeat;
+              height: 100px;
+              
+          }
+  
+          header .logo {
+              max-height: 97px;
+          }
+  
+          footer {
+              background: url() center no-repeat;
+              height: 100px;
+              display: none;
+          }
+      }
+  </style>
+  </div>
+  <!-- ngInclude: 'app/modals.html' --><div data-ng-include="'app/modals.html'" class="ng-scope"><!-- alert (OK) alert -->
+  <script type="text/ng-template" id="alert.html" class="ng-scope">
+      <div class="col-xs-12 p-b-10 p-t-10 confirm-modal">
+          <!-- body -->
+          <div class="col-xs-12">
+              <h1 title="title" style="width: inherit"><strong data-ng-bind-html="ec.title"></strong>&shy;</h1>
+              <div data-ng-bind-html="ec.html" ></div>
+          </div>
+  
+          <!-- button(s) -->
+          <div class="col-xs-12 center">
+              <button class="btn btn-10 btn-default" data-ng-click="ec.onYesClick()" data-ng-enter="ec.onYesClick()">OK</button>
+          </div>
+      </div>
+  </script>
+  
+  <script type="text/ng-template" id="confirm.html" class="ng-scope">
+      <div class="col-xs-12 p-b-10 p-t-10 confirm-modal" data-ng-enter="ec.onYesClick()">
+          <!-- title + body -->
+          <div class="col-xs-12">
+              <h2 title="title"><strong data-ng-bind="ec.title"></strong>&shy;</h2>
+              <div class="m-b-15" data-ng-bind-html="ec.html" ></div>
+          </div>
+  
+          <!-- button(s) -->
+          <div class="col-xs-12">
+              <div class="col-xs-6 right">
+                  <button class="btn btn-10 btn-default" data-ng-click="ec.onYesClick()">Yes</button>
+              </div>
+              <div class="col-xs-6 left">
+                  <button class="btn btn-10 btn-default gray" data-ng-click="ec.onNoClick()">No</button>
+              </div>
+          </div>
+      </div>
+  </script>
+  
+  <script type="text/ng-template" id="alertSkillSet.html" class="ng-scope">
+      <div class="col-xs-12 p-b-10 p-t-10 confirm-modal">
+          <div class="col-xs-12" title="To learn more about Find a Game please go to: http://www.findagame.io/">
+              <a href="http://www.findagame.io/" target="_blank">
+                  <h1><strong data-ng-bind-html="ec.title" ></strong></h1>
+              </a>
+              <div data-ng-bind-html="ec.html"></div>
+          </div>
+          <div class="col-xs-12 m-t-05 min-h-30">
+              <div class="col-xs-12">
+                  <select name="SkillLevelID" class="edit" data-ng-model="ec.skillLevelId" ng-change="ec.onSkillSetUpdate();" autofocus>
+                      <option value="" disabled>Undefined</option>
+                      <option value="1">70's</option>
+                      <option value="2">80's</option>
+                      <option value="3">90's</option>
+                      <option value="4">100's</option>
+                      <option value="0">Prefer not to share</option>
+                  </select>
+  
+                  <span data-ng-bind="ec.skillLevelBinding()" class="read hide"></span>
+              </div>
+          </div>
+          <div class="col-xs-12 center">
+              <button id="fgOKButton" class="btn btn-10 btn-default" data-ng-disabled="!ec.validSkillSet" data-ng-click="ec.onSkillSetSubmitClick()">OK</button>
+          </div>
+      </div>
+  </script>
+  
+  <script type="text/ng-template" id="alertModifyReservation.html" controller="ec" class="ng-scope">
+      <div class="col-xs-12 p-b-10 p-t-10 confirm-modal">
+          <h1><strong data-ng-bind-html="ec.title" ></strong></h1>
+          <div class="col-xs-12" title="To change the number of golfers in your reservation, select a number to delete from reservation.">
+              <div data-ng-bind-html="ec.html"></div>
+          </div>
+          <div class="col-xs-12 m-t-05 min-h-30">
+              <div class="col-xs-12">
+                  <select id="numGolfers" name="numberOfPlayers" class="preSearch-select-player" data-ng-model="ec.numGolfers"
+                          ng-options="golferNumList.value as golferNumList.value for golferNumList in ec.golferNumList"
+                          ng-init="ec.golferNumList[$index] = ec.golferNumList[$index].value" title="Select Number of Players to Remove From Reservation" ></select>
+              </div>
+          </div>
+          <div class="col-xs-6  center">
+              <button class="btn btn-10 btn-default gray" data-ng-click="ec.onNoClick()">Cancel</button>
+          </div>
+          <div class="col-xs-6 center">
+              <button class="btn btn-10 btn-default" data-ng-click="ec.onModifyReservationOKClick()">OK</button>
+          </div>
+      </div>
+  </script>
+  
+  <script type="text/ng-template" id="alertSendToCalendar.html" class="ng-scope">
+      <div class="col-xs-12 p-b-10 p-t-10 confirm-modal center" data-ng-enter="ec.onNoClick()">
+          <div class="col-xs-12 center" title="Choose a Calendar to Update">
+              <h1>
+                  <strong>{{message}}</strong>
+              </h1>
+          </div>
+          <div class="add-to-calendar center" id="calendarAnchors">
+              <div>
+                  <a target="_blank" href="{{hrefGoogleCalendar}}">Google Calendar</a><br />
+              </div>
+              <div class="{{showYahoo}}">
+                  <a target="_blank" href="{{hrefYahooCalendar}}">Yahoo Calendar</a><br />
+              </div>
+              <div class="{{showOutlook}}">
+                  <a target="_blank" href="{{hrefOutlookCalendar}}">Outlook Calendar</a><br />
+              </div>
+              <div>
+                  <a href="" data-ng-click="downloadIcs()" download="TeeTimeEvent.ics">{{iCal}}</a><br />
+              </div>
+          </div>
+          <br />
+          <div class="col-xs-12 center">
+              <button class="btn btn-10 btn-default green center" data-ng-click="ec.onNoClick()">Go Back</button>
+          </div>
+      </div>
+  </script>
+  
+  <script type="text/ng-template" id="enterGolferName.html" controller="ec" class="ng-scope">
+      <div class="col-xs-12 p-b-10 p-t-10 confirm-modal">
+          <h1><strong data-ng-bind-html="ec.title" ></strong></h1>
+          <div class="col-xs-12" title="Please type in the name of a player">
+              <div data-ng-bind-html="ec.html" ></div>
+          </div>
+          <div class="col-xs-12 m-t-05 min-h-30">
+              <div class="col-xs-12">
+                  <input type="text" placeholder="Last Name, First Name" id="golferName"
+                         data-ng-model="ec.golferName" maxlength="50"
+                         data-ng-model-options="{ debounce: 500 }"
+                         class="form-control player-text-box"
+                         title="Enter Golfer Name" />
+              </div>
+          </div>
+          <div class="col-xs-6  center">
+              <button class="btn btn-10 btn-default dark" data-ng-click="ec.onCancelClick()">Cancel</button>
+          </div>
+          <div class="col-xs-6 center">
+              <button class="btn btn-10 btn-default" data-ng-click="ec.onOKClick()">OK</button>
+          </div>
+      </div>
+  </script></div>
+  <div>
+  <div class="loading-div" cg-busy="gcIsLoadingDfd"><div class="cg-busy cg-busy-backdrop cg-busy-backdrop-animation ng-scope ng-hide" ng-show="$cgBusyIsActive() === true"></div><div class="cg-busy cg-busy-animation ng-scope ng-hide" ng-show="$cgBusyIsActive() === true">
+          <div style="">
+              <div class="loading-indicator">
+                  <i class="fa-li fa fa-spinner fa-spin"></i>
+              </div>
+          </div>
+      </div></div>
+  <div data-ng-show="!isLoading" class="">
+  <!-- ngIf: !isSafariIniFrame --><!-- ngInclude: 'app/shared/header/header.html' --><div ng-if="!isSafariIniFrame" class="hidden-print ng-scope" data-ng-include="'app/shared/header/header.html'"><div data-ng-controller="headerController" class="container m-b-10 col-xs-12 nopadding ng-scope" data-ng-init="init()">    
+      <header class="m-b-10" data-ng-click="customerURL()"></header>
+  </div>
+  </div><!-- end ngIf: !isSafariIniFrame -->
+  <div class="container nopadding-xs">
+  <!-- ngIf: !hideCurrentTime --><div ng-if="!hideCurrentTime" class="current-time col-xs-12 right m-t-20 nopadding hidden-xs ng-binding ng-scope" data-ng-bind="(formatDate | date:'EEEE, MMMM dd, yyyy hh:mm:ss a')">Monday, April 22, 2024 10:45:49 PM</div><!-- end ngIf: !hideCurrentTime -->
+  <!-- uiView: undefined --><ui-view name="mainView" class="col-xs-12 nopadding ng-scope"><div class="search-result ng-scope" ng-app="ezLinks" ng-controller="searchController as ec" cg-busy="ec.isLoadingDfd" style="position: relative;">
+      <!-- ngIf: !ec.isSafariIniFrame --><div data-ng-if="!ec.isSafariIniFrame" class="row row-offcanvas row-offcanvas-left col-xs-12 nopadding ng-scope" data-ng-class="{ 'active': ec.showMobileFilters }">
+          <input type="hidden" id="csrfToken" value="b6a3b583-d3fc-467c-8d40-fa5f3df5573a">
+  
+          <!-- ngIf: ec.isInMoveReservationState -->
+  
+          <div class="col-xs-6 col-sm-3 sidebar-offcanvas nopadding search-filter-height" data-ng-class="ec.filterHeightClass()" id="sidebar" role="navigation">
+  
+              <ul class="filter">
+                  <!-- date-and-time picker (desktop and search-and-hold) -->
+                  <li data-ng-class="ec.isHideDateTimePicker()" class="hidden-xs">
+                      <div class="date-input">
+                          <!-- calendar -->
+                          <input type="text" datepicker="" id="pickerDate" name="pickerDate" data-ng-model="ec.filterSettings.date" title="Select a date to reserve a tee time" alt="Select a date to reserve a tee time" placeholder="Click here for date" data-ng-change="ec.onDateChange()" min-date="ec.minDate" max-date="ec.maxDate" aria-describedby="pickerDate" aria-labelledby="pickerDate" style="margin-bottom: 0px" ng-disabled="ec.isLoading" class="ng-valid ng-isolate-scope hasDatepicker ng-touched ng-dirty ng-valid-parse">
+                          <label aria-labelledby="pickerDate" for="pickerDate" title="Select a date to reserve a tee time" aria-describedby="pickerDate" class="btn" onclick="javascript:void(0)" style="padding-top: 5px; padding-bottom: 0px; border-top: 0px; border-bottom: 0px; height: 0px;">
+                              <i alt="Select a date to reserve a tee time" class="fa fa-calendar" title="Select a date to reserve a tee time" aria-describedby="pickerDate" aria-labelledby="pickerDate"></i>&shy;
+                          </label>
+  
+                          <!-- time range slider -->
+                          <label style="color: #ffffff; text-align: center; top: 0px;" class="ng-binding">5:00 AM–7:00 PM</label>
+                          <div class="ngrs-range-slider ng-isolate-scope" range-slider="" style="margin: 10px 0 0px;" on-handle-up="ec.onTeeTimeFilterHandleUp()" pin-handle="none" prevent-equal-min-max="!ec.isSearchAndHold" min="ec.timeRange.min" max="ec.timeRange.max" model-min="ec.timeRange.userMinOne" model-max="ec.timeRange.userMaxOne" step="30" ng-class="{ 'div-disabled': ec.isLoading}"><div class="ngrs-runner"><div class="ngrs-handle ngrs-handle-min" style="left: 0%; display: block;"><i></i></div><div class="ngrs-handle ngrs-handle-max" style="left: 100%; display: block;"><i></i></div><div class="ngrs-join" style="left: 0%; right: 0%;"></div></div><div class="ngrs-value-runner"><div class="ngrs-value ngrs-value-min ng-hide" ng-show="showValues"><div class="ng-binding">300</div></div><div class="ngrs-value ngrs-value-max ng-hide" ng-show="showValues"><div class="ng-binding">1140</div></div></div></div>
+                          <div class="search-timeofplayhint ng-binding" style="color: #ffffff; text-align: center;"></div>
+                      </div>
+                  </li>
+  
+                  <!-- time-of-day filter (mobile only) -->
+                  <!-- ngIf: ec.canShowTimeOfDayFilter() --><li class="visible-xs ng-scope" data-ng-class="ec.timeOfDayFilterClass()" data-ng-if="ec.canShowTimeOfDayFilter()">
+                      <filterheader data-ng-click="ec.onTimeOfDayFilterClick()">
+                          Time of Day<i class="fa toggle-arrow fa-chevron-up" data-ng-class="ec.timeOfDayHeaderArrowClass()"></i>
+                      </filterheader>
+                      <div class="filter-window slider filter-body in collapse" uib-collapse="ec.isTimeOfDayFilterCollapsed" aria-expanded="true" aria-hidden="false" style="height: auto;">
+                          <label class="ng-binding">5:00 AM–7:00 PM</label>
+                          <div class="ngrs-range-slider ng-isolate-scope" range-slider="" on-handle-up="ec.onTimeOfDaySliderHandleUp()" pin-handle="none" prevent-equal-min-max="!ec.isSearchAndHold" min="ec.timeRange.min" max="ec.timeRange.max" model-min="ec.timeRange.userMinOne" model-max="ec.timeRange.userMaxOne" step="30" ng-class="{ 'div-disabled': ec.isLoading}"><div class="ngrs-runner"><div class="ngrs-handle ngrs-handle-min" style="left: 0%; display: block;"><i></i></div><div class="ngrs-handle ngrs-handle-max" style="left: 100%; display: block;"><i></i></div><div class="ngrs-join" style="left: 0%; right: 0%;"></div></div><div class="ngrs-value-runner"><div class="ngrs-value ngrs-value-min ng-hide" ng-show="showValues"><div class="ng-binding">300</div></div><div class="ngrs-value ngrs-value-max ng-hide" ng-show="showValues"><div class="ng-binding">1140</div></div></div></div>
+                      </div>
+                  </li><!-- end ngIf: ec.canShowTimeOfDayFilter() -->
+  
+                  <!-- players filter-->
+                  <!-- ngIf: ec.showPlayersFilter --><li data-ng-class="ec.playersFilterClass()" data-ng-if="ec.showPlayersFilter" class="ng-scope">
+                      <filterheader data-ng-click="ec.onPlayersFilterArrowClick()">
+                          Players<i class="fa toggle-arrow fa-chevron-up" data-ng-class="ec.playersHeaderArrowClass()"></i>
+                      </filterheader>
+                      <div uib-collapse="ec.isPlayersFilterCollapsed" class="in collapse" aria-expanded="true" aria-hidden="false" style="height: auto;">
+                          <div class="btn-group col-xs-12 menu-dropdown dropdown" uib-dropdown="">
+                              <button id="players-button" type="button" class="btn btn-white col-xs-12 dropdown-toggle" uib-dropdown-toggle="" ng-disabled="ec.isLoading" aria-haspopup="true" aria-expanded="false">
+                                  <div class="dropdown-selected-item col-xs-6">
+                                      <span data-ng-bind="ec.playersFilterDataBinding()" class="ng-binding">4</span>
+                                  </div>
+                                  <div class="dropdown-selected-item-caret col-xs-6">
+                                      <span class="caret"></span>
+                                  </div>
+                              </button>
+                              <ul uib-dropdown-menu="" role="menu" aria-labelledby="players-button" class="col-sm-12 dropdown-menu">
+                                  <!-- ngRepeat: p in ec.data.NumPlayersList --><li data-ng-repeat="p in ec.data.NumPlayersList" role="menuitem" data-ng-click="ec.onPlayersFilterChange($index)" class="ng-scope">
+                                      <a href="javascript:void(0)" data-ng-bind="p" class="ng-binding">1</a>
+                                  </li><!-- end ngRepeat: p in ec.data.NumPlayersList --><li data-ng-repeat="p in ec.data.NumPlayersList" role="menuitem" data-ng-click="ec.onPlayersFilterChange($index)" class="ng-scope">
+                                      <a href="javascript:void(0)" data-ng-bind="p" class="ng-binding">2</a>
+                                  </li><!-- end ngRepeat: p in ec.data.NumPlayersList --><li data-ng-repeat="p in ec.data.NumPlayersList" role="menuitem" data-ng-click="ec.onPlayersFilterChange($index)" class="ng-scope">
+                                      <a href="javascript:void(0)" data-ng-bind="p" class="ng-binding">3</a>
+                                  </li><!-- end ngRepeat: p in ec.data.NumPlayersList --><li data-ng-repeat="p in ec.data.NumPlayersList" role="menuitem" data-ng-click="ec.onPlayersFilterChange($index)" class="ng-scope">
+                                      <a href="javascript:void(0)" data-ng-bind="p" class="ng-binding">4</a>
+                                  </li><!-- end ngRepeat: p in ec.data.NumPlayersList -->
+                              </ul>
+                          </div>
+                          <hr class="clear" style="margin-bottom: 0">
+  
+                      </div>
+                  </li><!-- end ngIf: ec.showPlayersFilter -->
+  
+                  <!-- holes filter -->
+                  <!-- ngIf: ec.showHolesFilter -->
+  
+                  <!-- price option filter -->
+                  <!-- ngIf: ec.showPriceOptionsFilter --><li data-ng-class="ec.priceOptionsFilterClass()" data-ng-if="ec.showPriceOptionsFilter" class="ng-scope">
+                      <filterheader data-ng-click="ec.onPriceOptionsFilterArrowClick()" class="ng-binding">
+                          Pricing Options
+                          <i class="fa toggle-arrow fa-chevron-up" data-ng-class="ec.priceOptionsHeaderArrowClass()"></i>
+                      </filterheader>
+                      <div class="m-b-05 checklist filter-body in collapse" uib-collapse="ec.isPriceOptionsFilterCollapsed" aria-expanded="true" aria-hidden="false" style="height: auto;">
+                          <ul class="automationPadding">
+                              <!-- ngRepeat: filter in ec.priceOptionsFilters | orderBy --><li ng-repeat="filter in ec.priceOptionsFilters | orderBy" class="clear ng-scope">
+                                  <div>
+                                      <div style="float: left; display: inline; padding-right: 8px;">
+                                          <input id="priceOption" type="checkbox" data-ng-value="filter.value" data-ng-model="filter.checked" ng-click="ec.onPriceOptionCheckboxClick(filter)" title="Select an option" ng-disabled="ec.isLoading" class="ng-pristine ng-untouched ng-valid" value="17693">
+                                      </div>
+                                      <div style="float: left; display: inline; width: 80%;">
+                                          <label data-ng-bind="filter.title" data-ng-click="ec.onPriceOptionLabelClick(filter)" class="ng-binding">Resident Passholder</label>
+                                      </div>
+                                  </div>
+                              </li><!-- end ngRepeat: filter in ec.priceOptionsFilters | orderBy --><li ng-repeat="filter in ec.priceOptionsFilters | orderBy" class="clear ng-scope">
+                                  <div>
+                                      <div style="float: left; display: inline; padding-right: 8px;">
+                                          <input id="priceOption" type="checkbox" data-ng-value="filter.value" data-ng-model="filter.checked" ng-click="ec.onPriceOptionCheckboxClick(filter)" title="Select an option" ng-disabled="ec.isLoading" class="ng-pristine ng-untouched ng-valid" value="17711">
+                                      </div>
+                                      <div style="float: left; display: inline; width: 80%;">
+                                          <label data-ng-bind="filter.title" data-ng-click="ec.onPriceOptionLabelClick(filter)" class="ng-binding">Sr. Park Passholder</label>
+                                      </div>
+                                  </div>
+                              </li><!-- end ngRepeat: filter in ec.priceOptionsFilters | orderBy --><li ng-repeat="filter in ec.priceOptionsFilters | orderBy" class="clear ng-scope">
+                                  <div>
+                                      <div style="float: left; display: inline; padding-right: 8px;">
+                                          <input id="priceOption" type="checkbox" data-ng-value="filter.value" data-ng-model="filter.checked" ng-click="ec.onPriceOptionCheckboxClick(filter)" title="Select an option" ng-disabled="ec.isLoading" class="ng-pristine ng-untouched ng-valid" value="17712">
+                                      </div>
+                                      <div style="float: left; display: inline; width: 80%;">
+                                          <label data-ng-bind="filter.title" data-ng-click="ec.onPriceOptionLabelClick(filter)" class="ng-binding">Jr. Park Passholder</label>
+                                      </div>
+                                  </div>
+                              </li><!-- end ngRepeat: filter in ec.priceOptionsFilters | orderBy -->
+                          </ul>
+                      </div>
+                  </li><!-- end ngIf: ec.showPriceOptionsFilter -->
+  
+                  <!-- Country filter -->
+                  <!-- ngIf: ec.showCountryFilter -->
+  
+                  <!-- State filter -->
+                  <!-- ngIf: ec.showStateFilter -->
+  
+                  <!-- City filter -->
+                  <!-- ngIf: ec.showCityFilter --><li data-ng-class="ec.cityFilterClass()" data-ng-if="ec.showCityFilter" class="ng-scope">
+                      <!-- City -->
+                      <filterheader data-ng-click="ec.onCityFilterArrowClick()">
+                          City <i class="fa toggle-arrow fa-chevron-up" data-ng-class="ec.cityFilterHeaderArrowClass()"></i>
+                      </filterheader>
+  
+                      <!-- checkboxes or radio buttons -->
+                      <div class="checklist filter-body m-b-05 in collapse" uib-collapse="ec.isCityFilterCollapsed" aria-expanded="true" aria-hidden="false" style="height: auto;">
+                          <!-- ngIf: ec.showCitySelectAllControls --><div class="search-select-div ng-scope" data-ng-if="ec.showCitySelectAllControls">
+                              <a href="javascript:void(0)" ng-click="ec.onCityFilterSelectAllClick()" class="search-select-all" ng-disabled="ec.isLoading">Select All</a>|
+                              <a href="javascript:void(0)" ng-click="ec.onCityFilterClearAllClick()" class="search-clear-all" ng-disabled="ec.isLoading">Clear All</a>
+                          </div><!-- end ngIf: ec.showCitySelectAllControls -->
+                          <ul class="automationPadding">
+                              <!-- ngRepeat: cf in ec.cityFilters | filter: { visible: true } | orderBy: 'name' --><li ng-repeat="cf in ec.cityFilters | filter: { visible: true } | orderBy: 'name'" class="clear ng-scope">
+                                  <div>
+                                      <div style="float: left; display: inline; padding-right: 8px;">
+                                          <input id="cityName_Ossining" type="checkbox" aria-labelledby="cityLabel_Ossining" title="Select a city" data-ng-value="cf.name" data-ng-model="cf.checked" ng-click="ec.onCityFilterChanged(cf)" ng-disabled="ec.isLoading" class="ng-pristine ng-untouched ng-valid" value="Ossining">
+                                      </div>
+                                      <div style="float: left; display: inline; width: 80%;">
+                                          <label id="cityLabel_Ossining" for="cityName_Ossining" title="Select a city" data-ng-bind="cf.name" ng-disabled="ec.isLoading" class="ng-binding">Ossining</label>
+                                      </div>
+                                  </div>
+                              </li><!-- end ngRepeat: cf in ec.cityFilters | filter: { visible: true } | orderBy: 'name' --><li ng-repeat="cf in ec.cityFilters | filter: { visible: true } | orderBy: 'name'" class="clear ng-scope">
+                                  <div>
+                                      <div style="float: left; display: inline; padding-right: 8px;">
+                                          <input id="cityName_Scarsdale" type="checkbox" aria-labelledby="cityLabel_Scarsdale" title="Select a city" data-ng-value="cf.name" data-ng-model="cf.checked" ng-click="ec.onCityFilterChanged(cf)" ng-disabled="ec.isLoading" class="ng-pristine ng-untouched ng-valid" value="Scarsdale">
+                                      </div>
+                                      <div style="float: left; display: inline; width: 80%;">
+                                          <label id="cityLabel_Scarsdale" for="cityName_Scarsdale" title="Select a city" data-ng-bind="cf.name" ng-disabled="ec.isLoading" class="ng-binding">Scarsdale</label>
+                                      </div>
+                                  </div>
+                              </li><!-- end ngRepeat: cf in ec.cityFilters | filter: { visible: true } | orderBy: 'name' --><li ng-repeat="cf in ec.cityFilters | filter: { visible: true } | orderBy: 'name'" class="clear ng-scope">
+                                  <div>
+                                      <div style="float: left; display: inline; padding-right: 8px;">
+                                          <input id="cityName_White Plains" type="checkbox" aria-labelledby="cityLabel_White Plains" title="Select a city" data-ng-value="cf.name" data-ng-model="cf.checked" ng-click="ec.onCityFilterChanged(cf)" ng-disabled="ec.isLoading" class="ng-pristine ng-untouched ng-valid" value="White Plains">
+                                      </div>
+                                      <div style="float: left; display: inline; width: 80%;">
+                                          <label id="cityLabel_White Plains" for="cityName_White Plains" title="Select a city" data-ng-bind="cf.name" ng-disabled="ec.isLoading" class="ng-binding">White Plains</label>
+                                      </div>
+                                  </div>
+                              </li><!-- end ngRepeat: cf in ec.cityFilters | filter: { visible: true } | orderBy: 'name' --><li ng-repeat="cf in ec.cityFilters | filter: { visible: true } | orderBy: 'name'" class="clear ng-scope">
+                                  <div>
+                                      <div style="float: left; display: inline; padding-right: 8px;">
+                                          <input id="cityName_Yonkers" type="checkbox" aria-labelledby="cityLabel_Yonkers" title="Select a city" data-ng-value="cf.name" data-ng-model="cf.checked" ng-click="ec.onCityFilterChanged(cf)" ng-disabled="ec.isLoading" class="ng-pristine ng-untouched ng-valid" value="Yonkers">
+                                      </div>
+                                      <div style="float: left; display: inline; width: 80%;">
+                                          <label id="cityLabel_Yonkers" for="cityName_Yonkers" title="Select a city" data-ng-bind="cf.name" ng-disabled="ec.isLoading" class="ng-binding">Yonkers</label>
+                                      </div>
+                                  </div>
+                              </li><!-- end ngRepeat: cf in ec.cityFilters | filter: { visible: true } | orderBy: 'name' --><li ng-repeat="cf in ec.cityFilters | filter: { visible: true } | orderBy: 'name'" class="clear ng-scope">
+                                  <div>
+                                      <div style="float: left; display: inline; padding-right: 8px;">
+                                          <input id="cityName_Yorktown Heights" type="checkbox" aria-labelledby="cityLabel_Yorktown Heights" title="Select a city" data-ng-value="cf.name" data-ng-model="cf.checked" ng-click="ec.onCityFilterChanged(cf)" ng-disabled="ec.isLoading" class="ng-pristine ng-untouched ng-valid" value="Yorktown Heights">
+                                      </div>
+                                      <div style="float: left; display: inline; width: 80%;">
+                                          <label id="cityLabel_Yorktown Heights" for="cityName_Yorktown Heights" title="Select a city" data-ng-bind="cf.name" ng-disabled="ec.isLoading" class="ng-binding">Yorktown Heights</label>
+                                      </div>
+                                  </div>
+                              </li><!-- end ngRepeat: cf in ec.cityFilters | filter: { visible: true } | orderBy: 'name' -->
+                          </ul>
+                      </div>
+                  </li><!-- end ngIf: ec.showCityFilter -->
+  
+                  <!-- Course filter -->
+                  <!-- ngIf: ec.showCourseFilter --><li data-ng-class="ec.courseFilterClass()" data-ng-if="ec.showCourseFilter" class="ng-scope">
+                      <!-- Course -->
+                      <filterheader data-ng-click="ec.onCourseFilterArrowClick()">
+                          Course <i class="fa toggle-arrow fa-chevron-up" data-ng-class="ec.courseFilterHeaderArrowClass()"></i>
+                      </filterheader>
+  
+                      <!-- checkboxes -->
+                      <div class="checklist filter-body m-b-05 in collapse" uib-collapse="ec.isCourseFilterCollapsed" aria-expanded="true" aria-hidden="false" style="height: auto;">
+                          <!-- ngIf: ec.showCourseSelectAllControls --><div class="search-select-div ng-scope" data-ng-if="ec.showCourseSelectAllControls">
+                              <a href="javascript:void(0)" ng-click="ec.onCourseFilterSelectAllClick()" class="search-select-all" ng-disabled="ec.isLoading">Select All</a>|
+                              <a href="javascript:void(0)" ng-click="ec.onCourseFilterClearAllClick()" class="search-clear-all" ng-disabled="ec.isLoading">Clear All</a>
+                          </div><!-- end ngIf: ec.showCourseSelectAllControls -->
+                          <ul class="automationPadding">
+                              <!-- ngRepeat: cf in ec.courseFilters | filter: { visible: true } | orderBy: 'name' --><li ng-repeat="cf in ec.courseFilters | filter: { visible: true } | orderBy: 'name'" class="clear ng-scope">
+                                  <div>
+                                      <div style="float: left; display: inline; padding-right: 8px;">
+                                          <input id="courseName_Dunwoodie Golf Course" type="checkbox" aria-lbelledby="courseLabel_Dunwoodie Golf Course" title="Select a course" data-ng-value="cf.courseID" data-ng-model="cf.checked" ng-click="ec.onCourseFilterChanged(cf)" ng-disabled="ec.isLoading" class="ng-pristine ng-untouched ng-valid" value="12249">
+                                      </div>
+                                      <div style="float: left; display: inline; width: 80%;">
+                                          <label id="courseLabel_Dunwoodie Golf Course" for="courseName_Dunwoodie Golf Course" title="Select a course" data-ng-bind="cf.name" ng-disabled="ec.isLoading" class="ng-binding">Dunwoodie Golf Course</label>
+                                      </div>
+                                  </div>
+                              </li><!-- end ngRepeat: cf in ec.courseFilters | filter: { visible: true } | orderBy: 'name' --><li ng-repeat="cf in ec.courseFilters | filter: { visible: true } | orderBy: 'name'" class="clear ng-scope">
+                                  <div>
+                                      <div style="float: left; display: inline; padding-right: 8px;">
+                                          <input id="courseName_Hudson Hills Golf Course" type="checkbox" aria-lbelledby="courseLabel_Hudson Hills Golf Course" title="Select a course" data-ng-value="cf.courseID" data-ng-model="cf.checked" ng-click="ec.onCourseFilterChanged(cf)" ng-disabled="ec.isLoading" class="ng-pristine ng-untouched ng-valid" value="19939">
+                                      </div>
+                                      <div style="float: left; display: inline; width: 80%;">
+                                          <label id="courseLabel_Hudson Hills Golf Course" for="courseName_Hudson Hills Golf Course" title="Select a course" data-ng-bind="cf.name" ng-disabled="ec.isLoading" class="ng-binding">Hudson Hills Golf Course</label>
+                                      </div>
+                                  </div>
+                              </li><!-- end ngRepeat: cf in ec.courseFilters | filter: { visible: true } | orderBy: 'name' --><li ng-repeat="cf in ec.courseFilters | filter: { visible: true } | orderBy: 'name'" class="clear ng-scope">
+                                  <div>
+                                      <div style="float: left; display: inline; padding-right: 8px;">
+                                          <input id="courseName_Maple Moor Golf Course" type="checkbox" aria-lbelledby="courseLabel_Maple Moor Golf Course" title="Select a course" data-ng-value="cf.courseID" data-ng-model="cf.checked" ng-click="ec.onCourseFilterChanged(cf)" ng-disabled="ec.isLoading" class="ng-pristine ng-untouched ng-valid" value="12409">
+                                      </div>
+                                      <div style="float: left; display: inline; width: 80%;">
+                                          <label id="courseLabel_Maple Moor Golf Course" for="courseName_Maple Moor Golf Course" title="Select a course" data-ng-bind="cf.name" ng-disabled="ec.isLoading" class="ng-binding">Maple Moor Golf Course</label>
+                                      </div>
+                                  </div>
+                              </li><!-- end ngRepeat: cf in ec.courseFilters | filter: { visible: true } | orderBy: 'name' --><li ng-repeat="cf in ec.courseFilters | filter: { visible: true } | orderBy: 'name'" class="clear ng-scope">
+                                  <div>
+                                      <div style="float: left; display: inline; padding-right: 8px;">
+                                          <input id="courseName_Mohansic Golf Course" type="checkbox" aria-lbelledby="courseLabel_Mohansic Golf Course" title="Select a course" data-ng-value="cf.courseID" data-ng-model="cf.checked" ng-click="ec.onCourseFilterChanged(cf)" ng-disabled="ec.isLoading" class="ng-pristine ng-untouched ng-valid" value="12432">
+                                      </div>
+                                      <div style="float: left; display: inline; width: 80%;">
+                                          <label id="courseLabel_Mohansic Golf Course" for="courseName_Mohansic Golf Course" title="Select a course" data-ng-bind="cf.name" ng-disabled="ec.isLoading" class="ng-binding">Mohansic Golf Course</label>
+                                      </div>
+                                  </div>
+                              </li><!-- end ngRepeat: cf in ec.courseFilters | filter: { visible: true } | orderBy: 'name' --><li ng-repeat="cf in ec.courseFilters | filter: { visible: true } | orderBy: 'name'" class="clear ng-scope">
+                                  <div>
+                                      <div style="float: left; display: inline; padding-right: 8px;">
+                                          <input id="courseName_Saxon Woods Golf Course" type="checkbox" aria-lbelledby="courseLabel_Saxon Woods Golf Course" title="Select a course" data-ng-value="cf.courseID" data-ng-model="cf.checked" ng-click="ec.onCourseFilterChanged(cf)" ng-disabled="ec.isLoading" class="ng-pristine ng-untouched ng-valid" value="12564">
+                                      </div>
+                                      <div style="float: left; display: inline; width: 80%;">
+                                          <label id="courseLabel_Saxon Woods Golf Course" for="courseName_Saxon Woods Golf Course" title="Select a course" data-ng-bind="cf.name" ng-disabled="ec.isLoading" class="ng-binding">Saxon Woods Golf Course</label>
+                                      </div>
+                                  </div>
+                              </li><!-- end ngRepeat: cf in ec.courseFilters | filter: { visible: true } | orderBy: 'name' --><li ng-repeat="cf in ec.courseFilters | filter: { visible: true } | orderBy: 'name'" class="clear ng-scope">
+                                  <div>
+                                      <div style="float: left; display: inline; padding-right: 8px;">
+                                          <input id="courseName_Sprain Lake Golf Course" type="checkbox" aria-lbelledby="courseLabel_Sprain Lake Golf Course" title="Select a course" data-ng-value="cf.courseID" data-ng-model="cf.checked" ng-click="ec.onCourseFilterChanged(cf)" ng-disabled="ec.isLoading" class="ng-pristine ng-untouched ng-valid" value="12612">
+                                      </div>
+                                      <div style="float: left; display: inline; width: 80%;">
+                                          <label id="courseLabel_Sprain Lake Golf Course" for="courseName_Sprain Lake Golf Course" title="Select a course" data-ng-bind="cf.name" ng-disabled="ec.isLoading" class="ng-binding">Sprain Lake Golf Course</label>
+                                      </div>
+                                  </div>
+                              </li><!-- end ngRepeat: cf in ec.courseFilters | filter: { visible: true } | orderBy: 'name' -->
+                          </ul>
+                      </div>
+                  </li><!-- end ngIf: ec.showCourseFilter -->
+  
+                  <!-- Price Range filter -->
+                  <!-- ngIf: ec.canShowPriceRangeFilter() -->
+              </ul>
+  
+              <!-- -- search button ---->
+              <!-- ngIf: ec.isSearchAndHold -->
+              <!--/div>-->
+          </div>
+  
+          <div class="col-xs-12 col-sm-9 content top-menu xs-nopadding-x">
+  
+              <!-- nav tag is used for screen readers to aid the disabled -- generally used with big blocks of links being presented (probably original developer code) -->
+              <nav class="top-nav col-xs-12">
+  
+                  <!-- search result data -->
+                  <!-- ngIf: !ec.isSearchAndHold --><div class="search-result-data col-sm-7 col-xs-12 ng-scope" data-ng-if="!ec.isSearchAndHold">
+                      <div>
+                          <strong data-ng-bind="ec.dateAndPlayersReadout()" class="ng-binding">04/28/2024 / 4 players</strong>
+                      </div>
+                      <div>
+                          <strong data-ng-bind="ec.teetimeCountReadout()" class="ng-binding">308 tee times</strong>
+                      </div>
+                      <!-- ngIf: ec.canShowHolesReadout() --><div data-ng-if="ec.canShowHolesReadout()" class="ng-scope">
+                          <span data-ng-bind="ec.holesReadout()" class="ng-binding">Holes number: Any</span><br>
+                      </div><!-- end ngIf: ec.canShowHolesReadout() -->
+                      <!-- ngIf: ec.canShowPricingOptionReadout() -->
+                      <!-- ngIf: ec.canShowCourseNameReadout() -->
+                  </div><!-- end ngIf: !ec.isSearchAndHold -->
+                  <!-- ngIf: ec.isSearchAndHold -->
+  
+                  <!-- filters button and date picker, mobile (non-search-and-hold) -->
+                  <!-- ngIf: !ec.isSearchAndHold --><div class="visible-xs col-xs-10 ng-scope" data-ng-if="!ec.isSearchAndHold">
+                                  
+                      <!-- +/- FILTERS -->
+                      <div class="col-xs-4 nopadding-x m-t-05">
+                          <a class="primary-btn filters" href="javascript:void(0)" data-ng-click="ec.onMobileFiltersClick()">
+                              <i class="fa fa-plus" data-ng-class="ec.mobileFiltersHeaderIconClass()"></i> Filters
+                          </a>
+                      </div>
+  
+                      <!-- date picker (mobile only) -->
+                      <div class="col-xs-8 date-input"> <!-- note: in Search-and-Hold mode, mobile uses date-picker INSIDE the filter section (see top of file) -->
+                          <input type="text" placeholder="Select Date" datepicker="" name="mobilePickerDate" id="mobilePickerDate" ng-readonly="ec.filterSettings.date" data-ng-model="ec.filterSettings.date" data-ng-change="ec.onDateChange()" class="m-b-0 ng-pristine ng-untouched ng-valid ng-isolate-scope hasDatepicker" min-date="ec.minDate" max-date="ec.maxDate" aria-describedby="mobilePickerDate" readonly="readonly">
+                          <label aria-labelledby="mobilePickerDate" for="mobilePickerDate" onclick="javascript:void(0)" title="Select a date to reserve a tee time" aria-describedby="mobilePickerDate" class="btn m-b-0" alt="Select a date to reserve a tee time">
+                              <i alt="Select a date to reserve a tee time" class="fa fa-calendar"></i>&shy;
+                          </label>
+                      </div>
+                  </div><!-- end ngIf: !ec.isSearchAndHold -->
+                  <!-- create space to place fly-out menu properly, mobile (search-and-hold) -->
+                  <!-- ngIf: ec.isSearchAndHold -->
+  
+                  <!-- fly-out menu, mobile -->
+                  <fly-out-menu hide-search="true" hide-login-registration="ec.isInMoveReservationState" class="col-sm-5 col-xs-2 nopadding-x p-t-10 p-t-00-xs ng-isolate-scope"><div class="top-nav col-xs-12 p-t-10 p-t-00-xs right fly-out-menu nopadding-x hidden-print">
+      <div class="hidden-xs">
+          <!-- ngIf: (hideLoginRegistration || hideRegistration) && !hideSearch -->
+  
+          <!-- ngIf: !isCurrentUser() -->
+  
+          <!-- ngIf: isCurrentUser() && !hideLoginRegistration --><div data-ng-if="isCurrentUser() &amp;&amp; !hideLoginRegistration" class="ng-scope">
+              <!-- Tee Time Search / My Account-->
+              <!-- ngIf: !hideSearch -->
+              <div class="p-b-10" data-ng-mouseover="toggleMenu = true" data-ng-mouseout="toggleMenu = false">
+                  <a href="javascript:void(0)">My Account <i ng-class="toggleMenu ? 'fa fa-caret-up':'fa fa-caret-down'" class="fa fa-caret-down"></i></a>
+                  <div class="account-menu account-dekstop-menu ng-hide" data-ng-show="toggleMenu">
+                      <ul>
+                          <!-- ngIf: !hideReservations --><li data-ng-if="!hideReservations" class="ng-scope">
+                              <a href="#/reservations" ui-sref="reservations">Your reservations</a>
+                          </li><!-- end ngIf: !hideReservations -->
+                          <!-- ngIf: !hideReservations --><li class="sub-menu ng-scope" data-ng-if="!hideReservations">
+                              <a href="#/reservationspending" ui-sref="reservations({ tab: 'pending' })">Pending</a>
+                          </li><!-- end ngIf: !hideReservations -->
+                          <!-- ngIf: !hideReservations --><li class="sub-menu ng-scope" data-ng-if="!hideReservations">
+                              <a href="#/reservationshistoric" ui-sref="reservations({ tab: 'historic' })">Historic</a>
+                          </li><!-- end ngIf: !hideReservations -->
+                          <!-- ngIf: !hideContactInfo --><li data-ng-if="!hideContactInfo" class="ng-scope">
+                              <a href="#/edit-user-info" ui-sref="edit-user-info">Contact Information</a>
+                          </li><!-- end ngIf: !hideContactInfo -->
+                          <!-- ngIf: !hideMembership --><li data-ng-if="!hideMembership" class="ng-scope">
+                              <a href="#/membership-info" ui-sref="membership-info">Membership</a>
+                          </li><!-- end ngIf: !hideMembership -->
+                          <!-- ngIf: !hidePaymentInfo && allowSaveCreditCards --><li data-ng-if="!hidePaymentInfo &amp;&amp; allowSaveCreditCards" class="ng-scope">
+                              <a href="#/billing-info" ui-sref="billing-info">Payment Information</a>
+                          </li><!-- end ngIf: !hidePaymentInfo && allowSaveCreditCards -->
+                          <!-- ngIf: !hideViewTeeSheet && allowViewTeeSheet -->
+                          <li>
+                              <a href="javascript:void(0)" data-ng-click="signOut()">Sign Out</a>
+                          </li>
+                      </ul>
+                      <!-- ngIf: !isCurrentUser() -->
+                  </div>
+              </div>
+          </div><!-- end ngIf: isCurrentUser() && !hideLoginRegistration -->
+      </div>
+      <div class="visible-xs m-r-10">
+          <span data-ng-click="toggleMenu = !toggleMenu"><i class="fa fa-bars primary-btn"></i></span>
+  
+          <!-- My Account / Tee Time Search / Your reservations / Pending / Historic / Contact Information / Membership / Payment Information / View Tee Sheet / Sign Out -->
+          <div class="account-menu account-dekstop-menu ng-hide" data-ng-show="toggleMenu">
+              <!-- ngIf: isCurrentUser() && !hideLoginRegistration --><ul data-ng-if="isCurrentUser() &amp;&amp; !hideLoginRegistration" class="ng-scope">
+                  <!-- ngIf: !hideSearch -->
+                  <!-- ngIf: !hideReservations --><li data-ng-if="!hideReservations" class="ng-scope">
+                      <a href="#/reservations" ui-sref="reservations">Your reservations</a>
+                  </li><!-- end ngIf: !hideReservations -->
+                  <!-- ngIf: !hideReservations --><li class="sub-menu ng-scope" data-ng-if="!hideReservations">
+                      <a href="#/reservationspending" ui-sref="reservations({ tab: 'pending' })">Pending</a>
+                  </li><!-- end ngIf: !hideReservations -->
+                  <!-- ngIf: !hideReservations --><li class="sub-menu ng-scope" data-ng-if="!hideReservations">
+                      <a href="#/reservationshistoric" ui-sref="reservations({ tab: 'historic' })">Historic</a>
+                  </li><!-- end ngIf: !hideReservations -->
+                  <!-- ngIf: !hideContactInfo --><li data-ng-if="!hideContactInfo" class="ng-scope">
+                      <a href="#/edit-user-info" ui-sref="edit-user-info">Contact Information</a>
+                  </li><!-- end ngIf: !hideContactInfo -->
+                  <!-- ngIf: !hideMembership --><li data-ng-if="!hideMembership" class="ng-scope">
+                      <a href="#/membership-info" ui-sref="membership-info">Membership</a>
+                  </li><!-- end ngIf: !hideMembership -->
+                  <!-- ngIf: !hidePaymentInfo && allowSaveCreditCards --><li data-ng-if="!hidePaymentInfo &amp;&amp; allowSaveCreditCards" class="ng-scope">
+                      <a href="#/billing-info" ui-sref="billing-info">Payment Information</a>
+                  </li><!-- end ngIf: !hidePaymentInfo && allowSaveCreditCards -->
+                  <!-- ngIf: !hideViewTeeSheet && allowViewTeeSheet -->
+                  <li>
+                      <a href="javascript:void(0)" data-ng-click="signOut()">Sign Out</a>
+                  </li>
+              </ul><!-- end ngIf: isCurrentUser() && !hideLoginRegistration -->
+  
+              <!-- Tee Time Search / Create New Account / Sign In -->
+              <!-- ngIf: !isCurrentUser() -->
+          </div>
+      </div>
+  </div>
+  </fly-out-menu></nav>
+  
+              <!-- ngIf: ec.isInit -->
+  
+              <!-- ngIf: !ec.isSearchAndHold --><div data-ng-if="!ec.isSearchAndHold" class="ng-scope">
+                  <!-- banner message -->
+                  <div class="col-xs-12 nopadding ng-hide" data-ng-show="ec.showBannerMessage &amp;&amp; !ec.isFinalDBtimeout">
+                      <div id="bannerMessage" class="col-sm-12 col-xs-12">
+                      </div>
+                  </div>
+  
+                  <!-- tee time grid -->
+                  <!-- ngIf: !ec.isInit && !ec.isDBtimeout --><div data-ng-if="!ec.isInit &amp;&amp; !ec.isDBtimeout" class="ng-scope">
+                      <div class="col-xs-12 nopadding-sm main-content ng-pristine ng-untouched ng-valid" ng-model="ec.filterSettings" infinite-scroll="ec.loadData(false)">
+                          <ul class="tee-time-block">
+                              <!-- ngRepeat: t in ec.teetimes -->
+                              <li ng-repeat="t in ec.teetimes" class="ng-scope">
+                                  <!-- course name and rotation -->
+                                  <!-- ngIf: ec.showPodHatCourseName --><div ng-class="ec.courseNameClass" data-ng-if="ec.showPodHatCourseName" class="ng-scope course X2CourseName">
+                                      <span data-ng-bind="ec.teetimeCourseName(t)" class="ng-binding">Mohansic Golf Course</span>
+                                      <!-- ngIf: ec.isShowTeetimeRotationNames(t) -->
+                                  </div><!-- end ngIf: ec.showPodHatCourseName -->
+  
+                                  <!-- tee time -->
+                                  <span class="time ng-binding" data-ng-bind="ec.teetimeTimeDisplay(t)">2:24 PM</span>
+  
+                                  <!-- price, save display, icons -->
+                                  <!-- ngIf: !ec.data.ResponsiveHidePricing --><div ng-class="ec.priceClass" data-ng-if="!ec.data.ResponsiveHidePricing" class="ng-scope price">
+                                      <strong class="ec.priceRangeClass ng-binding" data-ng-class="ec.doubleHeightPriceClass()" data-ng-bind="ec.teetimePriceDisplay(t)">$40.00</strong>
+                                      <!-- ngIf: !ec.data.ResponsiveHideSpecials --><strong class="savings ng-binding ng-scope" data-ng-if="!ec.data.ResponsiveHideSpecials" data-ng-bind="ec.teetimeSavingsDisplay(t)"></strong><!-- end ngIf: !ec.data.ResponsiveHideSpecials -->
+                                      <!-- ngIf: ec.showIconsOnSearchPage -->
+                                  </div><!-- end ngIf: !ec.data.ResponsiveHidePricing -->
+  
+                                  <!-- player display text, [View/Move To] button -->
+                                  <div class="player-info">
+                                      <span class="players ng-binding" data-ng-bind="ec.teetimePlayerDisplayText(t)">1–4 Players</span>
+                                      <button class="primary-btn ng-pristine ng-untouched ng-valid ng-binding" ng-model="t.time" ng-click="ec.onPodButtonClick(t)" value="t.time">View</button>
+                                  </div>
+                              </li><!-- end ngRepeat: t in ec.teetimes --><li ng-repeat="t in ec.teetimes" class="ng-scope">
+                                  <!-- course name and rotation -->
+                                  <!-- ngIf: ec.showPodHatCourseName --><div ng-class="ec.courseNameClass" data-ng-if="ec.showPodHatCourseName" class="ng-scope course X2CourseName">
+                                      <span data-ng-bind="ec.teetimeCourseName(t)" class="ng-binding">Mohansic Golf Course</span>
+                                      <!-- ngIf: ec.isShowTeetimeRotationNames(t) -->
+                                  </div><!-- end ngIf: ec.showPodHatCourseName -->
+  
+                                  <!-- tee time -->
+                                  <span class="time ng-binding" data-ng-bind="ec.teetimeTimeDisplay(t)">2:42 PM</span>
+  
+                                  <!-- price, save display, icons -->
+                                  <!-- ngIf: !ec.data.ResponsiveHidePricing --><div ng-class="ec.priceClass" data-ng-if="!ec.data.ResponsiveHidePricing" class="ng-scope price">
+                                      <strong class="ec.priceRangeClass ng-binding" data-ng-class="ec.doubleHeightPriceClass()" data-ng-bind="ec.teetimePriceDisplay(t)">$40.00</strong>
+                                      <!-- ngIf: !ec.data.ResponsiveHideSpecials --><strong class="savings ng-binding ng-scope" data-ng-if="!ec.data.ResponsiveHideSpecials" data-ng-bind="ec.teetimeSavingsDisplay(t)"></strong><!-- end ngIf: !ec.data.ResponsiveHideSpecials -->
+                                      <!-- ngIf: ec.showIconsOnSearchPage -->
+                                  </div><!-- end ngIf: !ec.data.ResponsiveHidePricing -->
+  
+                                  <!-- player display text, [View/Move To] button -->
+                                  <div class="player-info">
+                                      <span class="players ng-binding" data-ng-bind="ec.teetimePlayerDisplayText(t)">1–4 Players</span>
+                                      <button class="primary-btn ng-pristine ng-untouched ng-valid ng-binding" ng-model="t.time" ng-click="ec.onPodButtonClick(t)" value="t.time">View</button>
+                                  </div>
+                              </li><!-- end ngRepeat: t in ec.teetimes --><li ng-repeat="t in ec.teetimes" class="ng-scope">
+                                  <!-- course name and rotation -->
+                                  <!-- ngIf: ec.showPodHatCourseName --><div ng-class="ec.courseNameClass" data-ng-if="ec.showPodHatCourseName" class="ng-scope course X2CourseName">
+                                      <span data-ng-bind="ec.teetimeCourseName(t)" class="ng-binding">Hudson Hills Golf Course</span>
+                                      <!-- ngIf: ec.isShowTeetimeRotationNames(t) -->
+                                  </div><!-- end ngIf: ec.showPodHatCourseName -->
+  
+                                  <!-- tee time -->
+                                  <span class="time ng-binding" data-ng-bind="ec.teetimeTimeDisplay(t)">2:51 PM</span>
+  
+                                  <!-- price, save display, icons -->
+                                  <!-- ngIf: !ec.data.ResponsiveHidePricing --><div ng-class="ec.priceClass" data-ng-if="!ec.data.ResponsiveHidePricing" class="ng-scope price">
+                                      <strong class="ec.priceRangeClass ng-binding" data-ng-class="ec.doubleHeightPriceClass()" data-ng-bind="ec.teetimePriceDisplay(t)">$50.00</strong>
+                                      <!-- ngIf: !ec.data.ResponsiveHideSpecials --><strong class="savings ng-binding ng-scope" data-ng-if="!ec.data.ResponsiveHideSpecials" data-ng-bind="ec.teetimeSavingsDisplay(t)"></strong><!-- end ngIf: !ec.data.ResponsiveHideSpecials -->
+                                      <!-- ngIf: ec.showIconsOnSearchPage -->
+                                  </div><!-- end ngIf: !ec.data.ResponsiveHidePricing -->
+  
+                                  <!-- player display text, [View/Move To] button -->
+                                  <div class="player-info">
+                                      <span class="players ng-binding" data-ng-bind="ec.teetimePlayerDisplayText(t)">1–4 Players</span>
+                                      <button class="primary-btn ng-pristine ng-untouched ng-valid ng-binding" ng-model="t.time" ng-click="ec.onPodButtonClick(t)" value="t.time">View</button>
+                                  </div>
+                              </li><!-- end ngRepeat: t in ec.teetimes --><li ng-repeat="t in ec.teetimes" class="ng-scope">
+                                  <!-- course name and rotation -->
+                                  <!-- ngIf: ec.showPodHatCourseName --><div ng-class="ec.courseNameClass" data-ng-if="ec.showPodHatCourseName" class="ng-scope course X2CourseName">
+                                      <span data-ng-bind="ec.teetimeCourseName(t)" class="ng-binding">Mohansic Golf Course</span>
+                                      <!-- ngIf: ec.isShowTeetimeRotationNames(t) -->
+                                  </div><!-- end ngIf: ec.showPodHatCourseName -->
+  
+                                  <!-- tee time -->
+                                  <span class="time ng-binding" data-ng-bind="ec.teetimeTimeDisplay(t)">2:51 PM</span>
+  
+                                  <!-- price, save display, icons -->
+                                  <!-- ngIf: !ec.data.ResponsiveHidePricing --><div ng-class="ec.priceClass" data-ng-if="!ec.data.ResponsiveHidePricing" class="ng-scope price">
+                                      <strong class="ec.priceRangeClass ng-binding" data-ng-class="ec.doubleHeightPriceClass()" data-ng-bind="ec.teetimePriceDisplay(t)">$40.00</strong>
+                                      <!-- ngIf: !ec.data.ResponsiveHideSpecials --><strong class="savings ng-binding ng-scope" data-ng-if="!ec.data.ResponsiveHideSpecials" data-ng-bind="ec.teetimeSavingsDisplay(t)"></strong><!-- end ngIf: !ec.data.ResponsiveHideSpecials -->
+                                      <!-- ngIf: ec.showIconsOnSearchPage -->
+                                  </div><!-- end ngIf: !ec.data.ResponsiveHidePricing -->
+  
+                                  <!-- player display text, [View/Move To] button -->
+                                  <div class="player-info">
+                                      <span class="players ng-binding" data-ng-bind="ec.teetimePlayerDisplayText(t)">1–4 Players</span>
+                                      <button class="primary-btn ng-pristine ng-untouched ng-valid ng-binding" ng-model="t.time" ng-click="ec.onPodButtonClick(t)" value="t.time">View</button>
+                                  </div>
+                              </li><!-- end ngRepeat: t in ec.teetimes --><li ng-repeat="t in ec.teetimes" class="ng-scope">
+                                  <!-- course name and rotation -->
+                                  <!-- ngIf: ec.showPodHatCourseName --><div ng-class="ec.courseNameClass" data-ng-if="ec.showPodHatCourseName" class="ng-scope course X2CourseName">
+                                      <span data-ng-bind="ec.teetimeCourseName(t)" class="ng-binding">Dunwoodie Golf Course</span>
+                                      <!-- ngIf: ec.isShowTeetimeRotationNames(t) -->
+                                  </div><!-- end ngIf: ec.showPodHatCourseName -->
+  
+                                  <!-- tee time -->
+                                  <span class="time ng-binding" data-ng-bind="ec.teetimeTimeDisplay(t)">3:00 PM</span>
+  
+                                  <!-- price, save display, icons -->
+                                  <!-- ngIf: !ec.data.ResponsiveHidePricing --><div ng-class="ec.priceClass" data-ng-if="!ec.data.ResponsiveHidePricing" class="ng-scope price">
+                                      <strong class="ec.priceRangeClass ng-binding" data-ng-class="ec.doubleHeightPriceClass()" data-ng-bind="ec.teetimePriceDisplay(t)">$40.00–$60.00</strong>
+                                      <!-- ngIf: !ec.data.ResponsiveHideSpecials --><strong class="savings ng-binding ng-scope" data-ng-if="!ec.data.ResponsiveHideSpecials" data-ng-bind="ec.teetimeSavingsDisplay(t)"></strong><!-- end ngIf: !ec.data.ResponsiveHideSpecials -->
+                                      <!-- ngIf: ec.showIconsOnSearchPage -->
+                                  </div><!-- end ngIf: !ec.data.ResponsiveHidePricing -->
+  
+                                  <!-- player display text, [View/Move To] button -->
+                                  <div class="player-info">
+                                      <span class="players ng-binding" data-ng-bind="ec.teetimePlayerDisplayText(t)">1–4 Players</span>
+                                      <button class="primary-btn ng-pristine ng-untouched ng-valid ng-binding" ng-model="t.time" ng-click="ec.onPodButtonClick(t)" value="t.time">View</button>
+                                  </div>
+                              </li><!-- end ngRepeat: t in ec.teetimes --><li ng-repeat="t in ec.teetimes" class="ng-scope">
+                                  <!-- course name and rotation -->
+                                  <!-- ngIf: ec.showPodHatCourseName --><div ng-class="ec.courseNameClass" data-ng-if="ec.showPodHatCourseName" class="ng-scope course X2CourseName">
+                                      <span data-ng-bind="ec.teetimeCourseName(t)" class="ng-binding">Mohansic Golf Course</span>
+                                      <!-- ngIf: ec.isShowTeetimeRotationNames(t) -->
+                                  </div><!-- end ngIf: ec.showPodHatCourseName -->
+  
+                                  <!-- tee time -->
+                                  <span class="time ng-binding" data-ng-bind="ec.teetimeTimeDisplay(t)">3:00 PM</span>
+  
+                                  <!-- price, save display, icons -->
+                                  <!-- ngIf: !ec.data.ResponsiveHidePricing --><div ng-class="ec.priceClass" data-ng-if="!ec.data.ResponsiveHidePricing" class="ng-scope price">
+                                      <strong class="ec.priceRangeClass ng-binding" data-ng-class="ec.doubleHeightPriceClass()" data-ng-bind="ec.teetimePriceDisplay(t)">$40.00</strong>
+                                      <!-- ngIf: !ec.data.ResponsiveHideSpecials --><strong class="savings ng-binding ng-scope" data-ng-if="!ec.data.ResponsiveHideSpecials" data-ng-bind="ec.teetimeSavingsDisplay(t)"></strong><!-- end ngIf: !ec.data.ResponsiveHideSpecials -->
+                                      <!-- ngIf: ec.showIconsOnSearchPage -->
+                                  </div><!-- end ngIf: !ec.data.ResponsiveHidePricing -->
+  
+                                  <!-- player display text, [View/Move To] button -->
+                                  <div class="player-info">
+                                      <span class="players ng-binding" data-ng-bind="ec.teetimePlayerDisplayText(t)">1–4 Players</span>
+                                      <button class="primary-btn ng-pristine ng-untouched ng-valid ng-binding" ng-model="t.time" ng-click="ec.onPodButtonClick(t)" value="t.time">View</button>
+                                  </div>
+                              </li><!-- end ngRepeat: t in ec.teetimes --><li ng-repeat="t in ec.teetimes" class="ng-scope">
+                                  <!-- course name and rotation -->
+                                  <!-- ngIf: ec.showPodHatCourseName --><div ng-class="ec.courseNameClass" data-ng-if="ec.showPodHatCourseName" class="ng-scope course X2CourseName">
+                                      <span data-ng-bind="ec.teetimeCourseName(t)" class="ng-binding">Hudson Hills Golf Course</span>
+                                      <!-- ngIf: ec.isShowTeetimeRotationNames(t) -->
+                                  </div><!-- end ngIf: ec.showPodHatCourseName -->
+  
+                                  <!-- tee time -->
+                                  <span class="time ng-binding" data-ng-bind="ec.teetimeTimeDisplay(t)">3:09 PM</span>
+  
+                                  <!-- price, save display, icons -->
+                                  <!-- ngIf: !ec.data.ResponsiveHidePricing --><div ng-class="ec.priceClass" data-ng-if="!ec.data.ResponsiveHidePricing" class="ng-scope price">
+                                      <strong class="ec.priceRangeClass ng-binding" data-ng-class="ec.doubleHeightPriceClass()" data-ng-bind="ec.teetimePriceDisplay(t)">$50.00</strong>
+                                      <!-- ngIf: !ec.data.ResponsiveHideSpecials --><strong class="savings ng-binding ng-scope" data-ng-if="!ec.data.ResponsiveHideSpecials" data-ng-bind="ec.teetimeSavingsDisplay(t)"></strong><!-- end ngIf: !ec.data.ResponsiveHideSpecials -->
+                                      <!-- ngIf: ec.showIconsOnSearchPage -->
+                                  </div><!-- end ngIf: !ec.data.ResponsiveHidePricing -->
+  
+                                  <!-- player display text, [View/Move To] button -->
+                                  <div class="player-info">
+                                      <span class="players ng-binding" data-ng-bind="ec.teetimePlayerDisplayText(t)">1–4 Players</span>
+                                      <button class="primary-btn ng-pristine ng-untouched ng-valid ng-binding" ng-model="t.time" ng-click="ec.onPodButtonClick(t)" value="t.time">View</button>
+                                  </div>
+                              </li><!-- end ngRepeat: t in ec.teetimes --><li ng-repeat="t in ec.teetimes" class="ng-scope">
+                                  <!-- course name and rotation -->
+                                  <!-- ngIf: ec.showPodHatCourseName --><div ng-class="ec.courseNameClass" data-ng-if="ec.showPodHatCourseName" class="ng-scope course X2CourseName">
+                                      <span data-ng-bind="ec.teetimeCourseName(t)" class="ng-binding">Mohansic Golf Course</span>
+                                      <!-- ngIf: ec.isShowTeetimeRotationNames(t) -->
+                                  </div><!-- end ngIf: ec.showPodHatCourseName -->
+  
+                                  <!-- tee time -->
+                                  <span class="time ng-binding" data-ng-bind="ec.teetimeTimeDisplay(t)">3:09 PM</span>
+  
+                                  <!-- price, save display, icons -->
+                                  <!-- ngIf: !ec.data.ResponsiveHidePricing --><div ng-class="ec.priceClass" data-ng-if="!ec.data.ResponsiveHidePricing" class="ng-scope price">
+                                      <strong class="ec.priceRangeClass ng-binding" data-ng-class="ec.doubleHeightPriceClass()" data-ng-bind="ec.teetimePriceDisplay(t)">$40.00</strong>
+                                      <!-- ngIf: !ec.data.ResponsiveHideSpecials --><strong class="savings ng-binding ng-scope" data-ng-if="!ec.data.ResponsiveHideSpecials" data-ng-bind="ec.teetimeSavingsDisplay(t)"></strong><!-- end ngIf: !ec.data.ResponsiveHideSpecials -->
+                                      <!-- ngIf: ec.showIconsOnSearchPage -->
+                                  </div><!-- end ngIf: !ec.data.ResponsiveHidePricing -->
+  
+                                  <!-- player display text, [View/Move To] button -->
+                                  <div class="player-info">
+                                      <span class="players ng-binding" data-ng-bind="ec.teetimePlayerDisplayText(t)">1–4 Players</span>
+                                      <button class="primary-btn ng-pristine ng-untouched ng-valid ng-binding" ng-model="t.time" ng-click="ec.onPodButtonClick(t)" value="t.time">View</button>
+                                  </div>
+                              </li><!-- end ngRepeat: t in ec.teetimes --><li ng-repeat="t in ec.teetimes" class="ng-scope">
+                                  <!-- course name and rotation -->
+                                  <!-- ngIf: ec.showPodHatCourseName --><div ng-class="ec.courseNameClass" data-ng-if="ec.showPodHatCourseName" class="ng-scope course X2CourseName">
+                                      <span data-ng-bind="ec.teetimeCourseName(t)" class="ng-binding">Dunwoodie Golf Course</span>
+                                      <!-- ngIf: ec.isShowTeetimeRotationNames(t) -->
+                                  </div><!-- end ngIf: ec.showPodHatCourseName -->
+  
+                                  <!-- tee time -->
+                                  <span class="time ng-binding" data-ng-bind="ec.teetimeTimeDisplay(t)">3:18 PM</span>
+  
+                                  <!-- price, save display, icons -->
+                                  <!-- ngIf: !ec.data.ResponsiveHidePricing --><div ng-class="ec.priceClass" data-ng-if="!ec.data.ResponsiveHidePricing" class="ng-scope price">
+                                      <strong class="ec.priceRangeClass ng-binding" data-ng-class="ec.doubleHeightPriceClass()" data-ng-bind="ec.teetimePriceDisplay(t)">$40.00–$60.00</strong>
+                                      <!-- ngIf: !ec.data.ResponsiveHideSpecials --><strong class="savings ng-binding ng-scope" data-ng-if="!ec.data.ResponsiveHideSpecials" data-ng-bind="ec.teetimeSavingsDisplay(t)"></strong><!-- end ngIf: !ec.data.ResponsiveHideSpecials -->
+                                      <!-- ngIf: ec.showIconsOnSearchPage -->
+                                  </div><!-- end ngIf: !ec.data.ResponsiveHidePricing -->
+  
+                                  <!-- player display text, [View/Move To] button -->
+                                  <div class="player-info">
+                                      <span class="players ng-binding" data-ng-bind="ec.teetimePlayerDisplayText(t)">1–4 Players</span>
+                                      <button class="primary-btn ng-pristine ng-untouched ng-valid ng-binding" ng-model="t.time" ng-click="ec.onPodButtonClick(t)" value="t.time">View</button>
+                                  </div>
+                              </li><!-- end ngRepeat: t in ec.teetimes --><li ng-repeat="t in ec.teetimes" class="ng-scope">
+                                  <!-- course name and rotation -->
+                                  <!-- ngIf: ec.showPodHatCourseName --><div ng-class="ec.courseNameClass" data-ng-if="ec.showPodHatCourseName" class="ng-scope course X2CourseName">
+                                      <span data-ng-bind="ec.teetimeCourseName(t)" class="ng-binding">Hudson Hills Golf Course</span>
+                                      <!-- ngIf: ec.isShowTeetimeRotationNames(t) -->
+                                  </div><!-- end ngIf: ec.showPodHatCourseName -->
+  
+                                  <!-- tee time -->
+                                  <span class="time ng-binding" data-ng-bind="ec.teetimeTimeDisplay(t)">3:18 PM</span>
+  
+                                  <!-- price, save display, icons -->
+                                  <!-- ngIf: !ec.data.ResponsiveHidePricing --><div ng-class="ec.priceClass" data-ng-if="!ec.data.ResponsiveHidePricing" class="ng-scope price">
+                                      <strong class="ec.priceRangeClass ng-binding" data-ng-class="ec.doubleHeightPriceClass()" data-ng-bind="ec.teetimePriceDisplay(t)">$50.00</strong>
+                                      <!-- ngIf: !ec.data.ResponsiveHideSpecials --><strong class="savings ng-binding ng-scope" data-ng-if="!ec.data.ResponsiveHideSpecials" data-ng-bind="ec.teetimeSavingsDisplay(t)"></strong><!-- end ngIf: !ec.data.ResponsiveHideSpecials -->
+                                      <!-- ngIf: ec.showIconsOnSearchPage -->
+                                  </div><!-- end ngIf: !ec.data.ResponsiveHidePricing -->
+  
+                                  <!-- player display text, [View/Move To] button -->
+                                  <div class="player-info">
+                                      <span class="players ng-binding" data-ng-bind="ec.teetimePlayerDisplayText(t)">1–4 Players</span>
+                                      <button class="primary-btn ng-pristine ng-untouched ng-valid ng-binding" ng-model="t.time" ng-click="ec.onPodButtonClick(t)" value="t.time">View</button>
+                                  </div>
+                              </li><!-- end ngRepeat: t in ec.teetimes --><li ng-repeat="t in ec.teetimes" class="ng-scope">
+                                  <!-- course name and rotation -->
+                                  <!-- ngIf: ec.showPodHatCourseName --><div ng-class="ec.courseNameClass" data-ng-if="ec.showPodHatCourseName" class="ng-scope course X2CourseName">
+                                      <span data-ng-bind="ec.teetimeCourseName(t)" class="ng-binding">Maple Moor Golf Course</span>
+                                      <!-- ngIf: ec.isShowTeetimeRotationNames(t) -->
+                                  </div><!-- end ngIf: ec.showPodHatCourseName -->
+  
+                                  <!-- tee time -->
+                                  <span class="time ng-binding" data-ng-bind="ec.teetimeTimeDisplay(t)">3:18 PM</span>
+  
+                                  <!-- price, save display, icons -->
+                                  <!-- ngIf: !ec.data.ResponsiveHidePricing --><div ng-class="ec.priceClass" data-ng-if="!ec.data.ResponsiveHidePricing" class="ng-scope price">
+                                      <strong class="ec.priceRangeClass ng-binding" data-ng-class="ec.doubleHeightPriceClass()" data-ng-bind="ec.teetimePriceDisplay(t)">$40.00</strong>
+                                      <!-- ngIf: !ec.data.ResponsiveHideSpecials --><strong class="savings ng-binding ng-scope" data-ng-if="!ec.data.ResponsiveHideSpecials" data-ng-bind="ec.teetimeSavingsDisplay(t)"></strong><!-- end ngIf: !ec.data.ResponsiveHideSpecials -->
+                                      <!-- ngIf: ec.showIconsOnSearchPage -->
+                                  </div><!-- end ngIf: !ec.data.ResponsiveHidePricing -->
+  
+                                  <!-- player display text, [View/Move To] button -->
+                                  <div class="player-info">
+                                      <span class="players ng-binding" data-ng-bind="ec.teetimePlayerDisplayText(t)">1–4 Players</span>
+                                      <button class="primary-btn ng-pristine ng-untouched ng-valid ng-binding" ng-model="t.time" ng-click="ec.onPodButtonClick(t)" value="t.time">View</button>
+                                  </div>
+                              </li><!-- end ngRepeat: t in ec.teetimes --><li ng-repeat="t in ec.teetimes" class="ng-scope">
+                                  <!-- course name and rotation -->
+                                  <!-- ngIf: ec.showPodHatCourseName --><div ng-class="ec.courseNameClass" data-ng-if="ec.showPodHatCourseName" class="ng-scope course X2CourseName">
+                                      <span data-ng-bind="ec.teetimeCourseName(t)" class="ng-binding">Mohansic Golf Course</span>
+                                      <!-- ngIf: ec.isShowTeetimeRotationNames(t) -->
+                                  </div><!-- end ngIf: ec.showPodHatCourseName -->
+  
+                                  <!-- tee time -->
+                                  <span class="time ng-binding" data-ng-bind="ec.teetimeTimeDisplay(t)">3:18 PM</span>
+  
+                                  <!-- price, save display, icons -->
+                                  <!-- ngIf: !ec.data.ResponsiveHidePricing --><div ng-class="ec.priceClass" data-ng-if="!ec.data.ResponsiveHidePricing" class="ng-scope price">
+                                      <strong class="ec.priceRangeClass ng-binding" data-ng-class="ec.doubleHeightPriceClass()" data-ng-bind="ec.teetimePriceDisplay(t)">$40.00</strong>
+                                      <!-- ngIf: !ec.data.ResponsiveHideSpecials --><strong class="savings ng-binding ng-scope" data-ng-if="!ec.data.ResponsiveHideSpecials" data-ng-bind="ec.teetimeSavingsDisplay(t)"></strong><!-- end ngIf: !ec.data.ResponsiveHideSpecials -->
+                                      <!-- ngIf: ec.showIconsOnSearchPage -->
+                                  </div><!-- end ngIf: !ec.data.ResponsiveHidePricing -->
+  
+                                  <!-- player display text, [View/Move To] button -->
+                                  <div class="player-info">
+                                      <span class="players ng-binding" data-ng-bind="ec.teetimePlayerDisplayText(t)">1–4 Players</span>
+                                      <button class="primary-btn ng-pristine ng-untouched ng-valid ng-binding" ng-model="t.time" ng-click="ec.onPodButtonClick(t)" value="t.time">View</button>
+                                  </div>
+                              </li><!-- end ngRepeat: t in ec.teetimes --><li ng-repeat="t in ec.teetimes" class="ng-scope">
+                                  <!-- course name and rotation -->
+                                  <!-- ngIf: ec.showPodHatCourseName --><div ng-class="ec.courseNameClass" data-ng-if="ec.showPodHatCourseName" class="ng-scope course X2CourseName">
+                                      <span data-ng-bind="ec.teetimeCourseName(t)" class="ng-binding">Dunwoodie Golf Course</span>
+                                      <!-- ngIf: ec.isShowTeetimeRotationNames(t) -->
+                                  </div><!-- end ngIf: ec.showPodHatCourseName -->
+  
+                                  <!-- tee time -->
+                                  <span class="time ng-binding" data-ng-bind="ec.teetimeTimeDisplay(t)">3:27 PM</span>
+  
+                                  <!-- price, save display, icons -->
+                                  <!-- ngIf: !ec.data.ResponsiveHidePricing --><div ng-class="ec.priceClass" data-ng-if="!ec.data.ResponsiveHidePricing" class="ng-scope price">
+                                      <strong class="ec.priceRangeClass ng-binding" data-ng-class="ec.doubleHeightPriceClass()" data-ng-bind="ec.teetimePriceDisplay(t)">$40.00–$60.00</strong>
+                                      <!-- ngIf: !ec.data.ResponsiveHideSpecials --><strong class="savings ng-binding ng-scope" data-ng-if="!ec.data.ResponsiveHideSpecials" data-ng-bind="ec.teetimeSavingsDisplay(t)"></strong><!-- end ngIf: !ec.data.ResponsiveHideSpecials -->
+                                      <!-- ngIf: ec.showIconsOnSearchPage -->
+                                  </div><!-- end ngIf: !ec.data.ResponsiveHidePricing -->
+  
+                                  <!-- player display text, [View/Move To] button -->
+                                  <div class="player-info">
+                                      <span class="players ng-binding" data-ng-bind="ec.teetimePlayerDisplayText(t)">1–4 Players</span>
+                                      <button class="primary-btn ng-pristine ng-untouched ng-valid ng-binding" ng-model="t.time" ng-click="ec.onPodButtonClick(t)" value="t.time">View</button>
+                                  </div>
+                              </li><!-- end ngRepeat: t in ec.teetimes --><li ng-repeat="t in ec.teetimes" class="ng-scope">
+                                  <!-- course name and rotation -->
+                                  <!-- ngIf: ec.showPodHatCourseName --><div ng-class="ec.courseNameClass" data-ng-if="ec.showPodHatCourseName" class="ng-scope course X2CourseName">
+                                      <span data-ng-bind="ec.teetimeCourseName(t)" class="ng-binding">Hudson Hills Golf Course</span>
+                                      <!-- ngIf: ec.isShowTeetimeRotationNames(t) -->
+                                  </div><!-- end ngIf: ec.showPodHatCourseName -->
+  
+                                  <!-- tee time -->
+                                  <span class="time ng-binding" data-ng-bind="ec.teetimeTimeDisplay(t)">3:27 PM</span>
+  
+                                  <!-- price, save display, icons -->
+                                  <!-- ngIf: !ec.data.ResponsiveHidePricing --><div ng-class="ec.priceClass" data-ng-if="!ec.data.ResponsiveHidePricing" class="ng-scope price">
+                                      <strong class="ec.priceRangeClass ng-binding" data-ng-class="ec.doubleHeightPriceClass()" data-ng-bind="ec.teetimePriceDisplay(t)">$50.00</strong>
+                                      <!-- ngIf: !ec.data.ResponsiveHideSpecials --><strong class="savings ng-binding ng-scope" data-ng-if="!ec.data.ResponsiveHideSpecials" data-ng-bind="ec.teetimeSavingsDisplay(t)"></strong><!-- end ngIf: !ec.data.ResponsiveHideSpecials -->
+                                      <!-- ngIf: ec.showIconsOnSearchPage -->
+                                  </div><!-- end ngIf: !ec.data.ResponsiveHidePricing -->
+  
+                                  <!-- player display text, [View/Move To] button -->
+                                  <div class="player-info">
+                                      <span class="players ng-binding" data-ng-bind="ec.teetimePlayerDisplayText(t)">1–4 Players</span>
+                                      <button class="primary-btn ng-pristine ng-untouched ng-valid ng-binding" ng-model="t.time" ng-click="ec.onPodButtonClick(t)" value="t.time">View</button>
+                                  </div>
+                              </li><!-- end ngRepeat: t in ec.teetimes --><li ng-repeat="t in ec.teetimes" class="ng-scope">
+                                  <!-- course name and rotation -->
+                                  <!-- ngIf: ec.showPodHatCourseName --><div ng-class="ec.courseNameClass" data-ng-if="ec.showPodHatCourseName" class="ng-scope course X2CourseName">
+                                      <span data-ng-bind="ec.teetimeCourseName(t)" class="ng-binding">Maple Moor Golf Course</span>
+                                      <!-- ngIf: ec.isShowTeetimeRotationNames(t) -->
+                                  </div><!-- end ngIf: ec.showPodHatCourseName -->
+  
+                                  <!-- tee time -->
+                                  <span class="time ng-binding" data-ng-bind="ec.teetimeTimeDisplay(t)">3:27 PM</span>
+  
+                                  <!-- price, save display, icons -->
+                                  <!-- ngIf: !ec.data.ResponsiveHidePricing --><div ng-class="ec.priceClass" data-ng-if="!ec.data.ResponsiveHidePricing" class="ng-scope price">
+                                      <strong class="ec.priceRangeClass ng-binding" data-ng-class="ec.doubleHeightPriceClass()" data-ng-bind="ec.teetimePriceDisplay(t)">$40.00</strong>
+                                      <!-- ngIf: !ec.data.ResponsiveHideSpecials --><strong class="savings ng-binding ng-scope" data-ng-if="!ec.data.ResponsiveHideSpecials" data-ng-bind="ec.teetimeSavingsDisplay(t)"></strong><!-- end ngIf: !ec.data.ResponsiveHideSpecials -->
+                                      <!-- ngIf: ec.showIconsOnSearchPage -->
+                                  </div><!-- end ngIf: !ec.data.ResponsiveHidePricing -->
+  
+                                  <!-- player display text, [View/Move To] button -->
+                                  <div class="player-info">
+                                      <span class="players ng-binding" data-ng-bind="ec.teetimePlayerDisplayText(t)">1–4 Players</span>
+                                      <button class="primary-btn ng-pristine ng-untouched ng-valid ng-binding" ng-model="t.time" ng-click="ec.onPodButtonClick(t)" value="t.time">View</button>
+                                  </div>
+                              </li><!-- end ngRepeat: t in ec.teetimes --><li ng-repeat="t in ec.teetimes" class="ng-scope">
+                                  <!-- course name and rotation -->
+                                  <!-- ngIf: ec.showPodHatCourseName --><div ng-class="ec.courseNameClass" data-ng-if="ec.showPodHatCourseName" class="ng-scope course X2CourseName">
+                                      <span data-ng-bind="ec.teetimeCourseName(t)" class="ng-binding">Mohansic Golf Course</span>
+                                      <!-- ngIf: ec.isShowTeetimeRotationNames(t) -->
+                                  </div><!-- end ngIf: ec.showPodHatCourseName -->
+  
+                                  <!-- tee time -->
+                                  <span class="time ng-binding" data-ng-bind="ec.teetimeTimeDisplay(t)">3:27 PM</span>
+  
+                                  <!-- price, save display, icons -->
+                                  <!-- ngIf: !ec.data.ResponsiveHidePricing --><div ng-class="ec.priceClass" data-ng-if="!ec.data.ResponsiveHidePricing" class="ng-scope price">
+                                      <strong class="ec.priceRangeClass ng-binding" data-ng-class="ec.doubleHeightPriceClass()" data-ng-bind="ec.teetimePriceDisplay(t)">$40.00</strong>
+                                      <!-- ngIf: !ec.data.ResponsiveHideSpecials --><strong class="savings ng-binding ng-scope" data-ng-if="!ec.data.ResponsiveHideSpecials" data-ng-bind="ec.teetimeSavingsDisplay(t)"></strong><!-- end ngIf: !ec.data.ResponsiveHideSpecials -->
+                                      <!-- ngIf: ec.showIconsOnSearchPage -->
+                                  </div><!-- end ngIf: !ec.data.ResponsiveHidePricing -->
+  
+                                  <!-- player display text, [View/Move To] button -->
+                                  <div class="player-info">
+                                      <span class="players ng-binding" data-ng-bind="ec.teetimePlayerDisplayText(t)">1–4 Players</span>
+                                      <button class="primary-btn ng-pristine ng-untouched ng-valid ng-binding" ng-model="t.time" ng-click="ec.onPodButtonClick(t)" value="t.time">View</button>
+                                  </div>
+                              </li><!-- end ngRepeat: t in ec.teetimes --><li ng-repeat="t in ec.teetimes" class="ng-scope">
+                                  <!-- course name and rotation -->
+                                  <!-- ngIf: ec.showPodHatCourseName --><div ng-class="ec.courseNameClass" data-ng-if="ec.showPodHatCourseName" class="ng-scope course X2CourseName">
+                                      <span data-ng-bind="ec.teetimeCourseName(t)" class="ng-binding">Saxon Woods Golf Course</span>
+                                      <!-- ngIf: ec.isShowTeetimeRotationNames(t) -->
+                                  </div><!-- end ngIf: ec.showPodHatCourseName -->
+  
+                                  <!-- tee time -->
+                                  <span class="time ng-binding" data-ng-bind="ec.teetimeTimeDisplay(t)">3:27 PM</span>
+  
+                                  <!-- price, save display, icons -->
+                                  <!-- ngIf: !ec.data.ResponsiveHidePricing --><div ng-class="ec.priceClass" data-ng-if="!ec.data.ResponsiveHidePricing" class="ng-scope price">
+                                      <strong class="ec.priceRangeClass ng-binding" data-ng-class="ec.doubleHeightPriceClass()" data-ng-bind="ec.teetimePriceDisplay(t)">$40.00</strong>
+                                      <!-- ngIf: !ec.data.ResponsiveHideSpecials --><strong class="savings ng-binding ng-scope" data-ng-if="!ec.data.ResponsiveHideSpecials" data-ng-bind="ec.teetimeSavingsDisplay(t)"></strong><!-- end ngIf: !ec.data.ResponsiveHideSpecials -->
+                                      <!-- ngIf: ec.showIconsOnSearchPage -->
+                                  </div><!-- end ngIf: !ec.data.ResponsiveHidePricing -->
+  
+                                  <!-- player display text, [View/Move To] button -->
+                                  <div class="player-info">
+                                      <span class="players ng-binding" data-ng-bind="ec.teetimePlayerDisplayText(t)">1–4 Players</span>
+                                      <button class="primary-btn ng-pristine ng-untouched ng-valid ng-binding" ng-model="t.time" ng-click="ec.onPodButtonClick(t)" value="t.time">View</button>
+                                  </div>
+                              </li><!-- end ngRepeat: t in ec.teetimes --><li ng-repeat="t in ec.teetimes" class="ng-scope">
+                                  <!-- course name and rotation -->
+                                  <!-- ngIf: ec.showPodHatCourseName --><div ng-class="ec.courseNameClass" data-ng-if="ec.showPodHatCourseName" class="ng-scope course X2CourseName">
+                                      <span data-ng-bind="ec.teetimeCourseName(t)" class="ng-binding">Sprain Lake Golf Course</span>
+                                      <!-- ngIf: ec.isShowTeetimeRotationNames(t) -->
+                                  </div><!-- end ngIf: ec.showPodHatCourseName -->
+  
+                                  <!-- tee time -->
+                                  <span class="time ng-binding" data-ng-bind="ec.teetimeTimeDisplay(t)">3:27 PM</span>
+  
+                                  <!-- price, save display, icons -->
+                                  <!-- ngIf: !ec.data.ResponsiveHidePricing --><div ng-class="ec.priceClass" data-ng-if="!ec.data.ResponsiveHidePricing" class="ng-scope price">
+                                      <strong class="ec.priceRangeClass ng-binding" data-ng-class="ec.doubleHeightPriceClass()" data-ng-bind="ec.teetimePriceDisplay(t)">$40.00</strong>
+                                      <!-- ngIf: !ec.data.ResponsiveHideSpecials --><strong class="savings ng-binding ng-scope" data-ng-if="!ec.data.ResponsiveHideSpecials" data-ng-bind="ec.teetimeSavingsDisplay(t)"></strong><!-- end ngIf: !ec.data.ResponsiveHideSpecials -->
+                                      <!-- ngIf: ec.showIconsOnSearchPage -->
+                                  </div><!-- end ngIf: !ec.data.ResponsiveHidePricing -->
+  
+                                  <!-- player display text, [View/Move To] button -->
+                                  <div class="player-info">
+                                      <span class="players ng-binding" data-ng-bind="ec.teetimePlayerDisplayText(t)">1–4 Players</span>
+                                      <button class="primary-btn ng-pristine ng-untouched ng-valid ng-binding" ng-model="t.time" ng-click="ec.onPodButtonClick(t)" value="t.time">View</button>
+                                  </div>
+                              </li><!-- end ngRepeat: t in ec.teetimes --><li ng-repeat="t in ec.teetimes" class="ng-scope">
+                                  <!-- course name and rotation -->
+                                  <!-- ngIf: ec.showPodHatCourseName --><div ng-class="ec.courseNameClass" data-ng-if="ec.showPodHatCourseName" class="ng-scope course X2CourseName">
+                                      <span data-ng-bind="ec.teetimeCourseName(t)" class="ng-binding">Dunwoodie Golf Course</span>
+                                      <!-- ngIf: ec.isShowTeetimeRotationNames(t) -->
+                                  </div><!-- end ngIf: ec.showPodHatCourseName -->
+  
+                                  <!-- tee time -->
+                                  <span class="time ng-binding" data-ng-bind="ec.teetimeTimeDisplay(t)">3:36 PM</span>
+  
+                                  <!-- price, save display, icons -->
+                                  <!-- ngIf: !ec.data.ResponsiveHidePricing --><div ng-class="ec.priceClass" data-ng-if="!ec.data.ResponsiveHidePricing" class="ng-scope price">
+                                      <strong class="ec.priceRangeClass ng-binding" data-ng-class="ec.doubleHeightPriceClass()" data-ng-bind="ec.teetimePriceDisplay(t)">$40.00–$60.00</strong>
+                                      <!-- ngIf: !ec.data.ResponsiveHideSpecials --><strong class="savings ng-binding ng-scope" data-ng-if="!ec.data.ResponsiveHideSpecials" data-ng-bind="ec.teetimeSavingsDisplay(t)"></strong><!-- end ngIf: !ec.data.ResponsiveHideSpecials -->
+                                      <!-- ngIf: ec.showIconsOnSearchPage -->
+                                  </div><!-- end ngIf: !ec.data.ResponsiveHidePricing -->
+  
+                                  <!-- player display text, [View/Move To] button -->
+                                  <div class="player-info">
+                                      <span class="players ng-binding" data-ng-bind="ec.teetimePlayerDisplayText(t)">1–4 Players</span>
+                                      <button class="primary-btn ng-pristine ng-untouched ng-valid ng-binding" ng-model="t.time" ng-click="ec.onPodButtonClick(t)" value="t.time">View</button>
+                                  </div>
+                              </li><!-- end ngRepeat: t in ec.teetimes --><li ng-repeat="t in ec.teetimes" class="ng-scope">
+                                  <!-- course name and rotation -->
+                                  <!-- ngIf: ec.showPodHatCourseName --><div ng-class="ec.courseNameClass" data-ng-if="ec.showPodHatCourseName" class="ng-scope course X2CourseName">
+                                      <span data-ng-bind="ec.teetimeCourseName(t)" class="ng-binding">Hudson Hills Golf Course</span>
+                                      <!-- ngIf: ec.isShowTeetimeRotationNames(t) -->
+                                  </div><!-- end ngIf: ec.showPodHatCourseName -->
+  
+                                  <!-- tee time -->
+                                  <span class="time ng-binding" data-ng-bind="ec.teetimeTimeDisplay(t)">3:36 PM</span>
+  
+                                  <!-- price, save display, icons -->
+                                  <!-- ngIf: !ec.data.ResponsiveHidePricing --><div ng-class="ec.priceClass" data-ng-if="!ec.data.ResponsiveHidePricing" class="ng-scope price">
+                                      <strong class="ec.priceRangeClass ng-binding" data-ng-class="ec.doubleHeightPriceClass()" data-ng-bind="ec.teetimePriceDisplay(t)">$50.00</strong>
+                                      <!-- ngIf: !ec.data.ResponsiveHideSpecials --><strong class="savings ng-binding ng-scope" data-ng-if="!ec.data.ResponsiveHideSpecials" data-ng-bind="ec.teetimeSavingsDisplay(t)"></strong><!-- end ngIf: !ec.data.ResponsiveHideSpecials -->
+                                      <!-- ngIf: ec.showIconsOnSearchPage -->
+                                  </div><!-- end ngIf: !ec.data.ResponsiveHidePricing -->
+  
+                                  <!-- player display text, [View/Move To] button -->
+                                  <div class="player-info">
+                                      <span class="players ng-binding" data-ng-bind="ec.teetimePlayerDisplayText(t)">1–4 Players</span>
+                                      <button class="primary-btn ng-pristine ng-untouched ng-valid ng-binding" ng-model="t.time" ng-click="ec.onPodButtonClick(t)" value="t.time">View</button>
+                                  </div>
+                              </li><!-- end ngRepeat: t in ec.teetimes -->
+                          </ul>
+                          <div ng-show="ec.isShowNoResultsDisplay() &amp;&amp; !ec.isFinalDBtimeout" class="no-results ng-hide">
+                              <strong ng-bind-html="ec.data.NoTeeTimePrimaryMessage" class="ng-binding">There are no reservations available that meet your search criteria for one of the following reasons:</strong><br>
+                              <span ng-bind-html="ec.data.NoTeeTimeSecondaryMessage" class="ng-binding">The course may be full or closed. You may be searching too far in advance. Or an applied search filter may be too narrow.</span>
+                          </div>
+                      </div>
+                  </div><!-- end ngIf: !ec.isInit && !ec.isDBtimeout -->
+  
+                  <!-- timeout message -->
+                  <!-- ngIf: ec.isDBtimeout -->
+  
+                  <!-- timed-out message -->
+                  <!-- ngIf: ec.isFinalDBtimeout -->
+              </div><!-- end ngIf: !ec.isSearchAndHold -->
+  
+              <!-- white space on mobile to push footer down past filter area -->
+              <!-- ngIf: ec.isSearchAndHold -->
+          </div>
+      </div><!-- end ngIf: !ec.isSafariIniFrame -->
+      <!-- ngIf: ec.isSafariIniFrame -->
+  <div class="cg-busy cg-busy-backdrop cg-busy-backdrop-animation ng-scope ng-hide" ng-show="$cgBusyIsActive() === true"></div><div class="cg-busy cg-busy-animation ng-scope ng-hide" ng-show="$cgBusyIsActive() === true">
+          <div style="">
+              <div class="loading-indicator">
+                  <i class="fa-li fa fa-spinner fa-spin"></i>
+              </div>
+          </div>
+      </div></div>&#xFEFF;</ui-view>
+  </div>
+  <br>
+  <br>
+  <!-- ngIf: !isSafariIniFrame --><!-- ngInclude: 'app/shared/footer/sub-footer.html' --><div ng-if="!isSafariIniFrame" class="hidden-print ng-scope" data-ng-include="'app/shared/footer/sub-footer.html'"><div class="container ng-scope" data-ng-controller="footerController" data-ng-init="initFooter()">
+      <div class="hidden-xs">
+          <div class="col-xs-12 nopadding">
+              <div class="col-sm-6 left nopadding">
+                  <div>
+                      <a data-ng-href="http://www.ezlinks.com/infodisplay/solutioncenter/privacypolicydefault.html" target="_blank" class="anchor-link" href="http://www.ezlinks.com/infodisplay/solutioncenter/privacypolicydefault.html">Terms</a>
+                  </div>
+              </div>
+              <div class="col-sm-6 right nopadding">
+                  <span data-ng-bind="PersonalAssistanceText" class="ng-binding"></span> <span data-ng-bind="PersonalAssistancePhone" class="ng-binding"> </span>
+              </div>
+          </div>
+          <div class="nopadding">
+              <div class="col-sm-6 col-xs-12 left center-xs nopadding ng-binding">
+                  Copyright © 2024 GolfNow. All Rights Reserved.
+              </div>
+              <div class="col-sm-6 right nopadding">
+                  <a href="mailto:" class="ng-binding">&shy;</a>
+              </div>
+              <div class="col-sm-6 col-xs-12 left center-xs nopadding versionTextAlign ng-binding">
+                  Version: 
+              </div>
+          </div>
+      </div>
+      <div class="visible-xs">
+          <div class="col-xs-12 center">
+              <span data-ng-bind="PersonalAssistanceText" class="ng-binding"></span>
+          </div>
+          <div class="col-xs-12 center">
+              <a href="tel: " data-ng-bind="PersonalAssistancePhone + '.'" alt="Contact Phone" class="ng-binding"> .</a>
+          </div>
+          <div class="col-xs-12 center">
+              <a href="mailto:" class="ng-binding">&shy; </a>
+          </div>
+          <div class="col-xs-12 center ng-binding">
+              Copyright © 2024 GolfNow. All Rights Reserved.
+          </div>
+          <div class="col-xs-12 center ng-binding">
+              Version: 
+          </div>
+          <div class="col-xs-12 center">
+              <a data-ng-href="http://www.ezlinks.com/infodisplay/solutioncenter/privacypolicydefault.html" target="_blank" class="anchor-link" href="http://www.ezlinks.com/infodisplay/solutioncenter/privacypolicydefault.html">Terms</a>
+          </div>
+      </div>
+  </div>
+  </div><!-- end ngIf: !isSafariIniFrame -->
+  <!-- ngIf: !isSafariIniFrame --><!-- ngInclude: 'app/shared/footer/footer.html' --><div ng-if="!isSafariIniFrame" data-ng-include="'app/shared/footer/footer.html'" class="ng-scope"><!--<footer class="footer" ng-init="initFooter()">
+      <div class="bottom-footer">
+          <div class="row nopadding">
+              <div class="footer-image">
+                  <img class="img-responsive center-block" src={{footerlogo}}/>
+              </div>
+          </div>
+      </div>
+  </footer>-->
+  
+  
+  <footer ng-init="initFooter()" class="col-xs-12 nopadding ng-scope"></footer></div><!-- end ngIf: !isSafariIniFrame -->
+  </div>
+  </div>
+  
+  <script defer="" src="app/all-adb5d35140.min.js" type="text/javascript"></script>
+  <script defer="" src="app/editUserInfo/services/edit-user-info-service.js" type="text/javascript"></script>
+  <script defer="" src="app/confirmation/controllers/confirmation-controller.js" type="text/javascript"></script>
+  <script defer="" src="app/search/data-model/http-interceptor.js" type="text/javascript"></script>
+  
+  
+  <div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all" style="position: absolute; top: 185.922px; left: 407px; z-index: 1; display: none;"><div class="ui-datepicker-header ui-widget-header ui-helper-clearfix ui-corner-all"><a class="ui-datepicker-prev ui-corner-all ui-state-disabled" title=""><span class="fa fa-arrow-circle-right"></span></a><a class="ui-datepicker-next ui-corner-all ui-state-disabled" title=""><span class="fa fa-arrow-circle-right"></span></a><div class="ui-datepicker-title"><select class="ui-datepicker-month" data-handler="selectMonth" data-event="change"><option value="3" selected="selected">Apr</option></select><select class="ui-datepicker-year" data-handler="selectYear" data-event="change"><option value="2024" selected="selected">2024</option></select></div></div><table class="ui-datepicker-calendar"><thead><tr><th scope="col" class="ui-datepicker-week-end"><span title="Sunday">Su</span></th><th scope="col"><span title="Monday">Mo</span></th><th scope="col"><span title="Tuesday">Tu</span></th><th scope="col"><span title="Wednesday">We</span></th><th scope="col"><span title="Thursday">Th</span></th><th scope="col"><span title="Friday">Fr</span></th><th scope="col" class="ui-datepicker-week-end"><span title="Saturday">Sa</span></th></tr></thead><tbody><tr><td class=" ui-datepicker-week-end ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">1</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">2</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">3</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">4</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">5</span></td><td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">6</span></td></tr><tr><td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">7</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">8</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">9</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">10</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">11</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">12</span></td><td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">13</span></td></tr><tr><td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">14</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">15</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">16</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">17</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">18</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">19</span></td><td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">20</span></td></tr><tr><td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">21</span></td><td class=" ui-datepicker-days-cell-over  ui-datepicker-current-day ui-datepicker-today" data-handler="selectDay" data-event="click" data-month="3" data-year="2024"><a class="ui-state-default ui-state-highlight ui-state-active" href="#">22</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="3" data-year="2024"><a class="ui-state-default" href="#">23</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="3" data-year="2024"><a class="ui-state-default" href="#">24</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="3" data-year="2024"><a class="ui-state-default" href="#">25</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="3" data-year="2024"><a class="ui-state-default" href="#">26</a></td><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="3" data-year="2024"><a class="ui-state-default" href="#">27</a></td></tr><tr><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="3" data-year="2024"><a class="ui-state-default" href="#">28</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="3" data-year="2024"><a class="ui-state-default" href="#">29</a></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">30</span></td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-week-end ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td></tr></tbody></table></div><div data-lastpass-root="" style="position: absolute !important; top: 0px !important; left: 0px !important; height: 0px !important; width: 0px !important;"></div></body></html>

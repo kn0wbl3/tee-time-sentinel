@@ -1,0 +1,6 @@
+# virtual enviroments
+venv/
+env/
+
+#passwords
+*.sh
